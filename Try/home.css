@@ -1,0 +1,222 @@
+body {
+	width:100%;
+	margin: auto;
+	background-color:#8B4513
+	}
+
+.header {
+	background-color:BurlyWood;
+	width:100%;
+	position:fixed;
+	top:0;
+	padding-left:10px;
+	padding-bottom:10px;
+	font-family:anivers;
+}
+.container {
+	margin: 0 auto;
+}
+
+h1 {
+	background-color:orange;
+	border-radius:25px;
+	padding:5px;
+	width:200px;
+	text-align:center;
+	border:1.5px solid brown;
+	color:green;
+	font-family:lato;
+	margin-left:25px;
+}
+.content {
+	background-color:#FFDAB9;
+	padding:10px;
+	border-radius:30px;
+	left:20px;
+	width:78%;
+	top:0px;
+	margin-top:170px;
+	position:absolute;
+	font-family:lato;
+}
+.nav {
+	background-color:#FFDAB9;
+	padding:10px;
+	border-radius:30px;
+	right:20px;
+	width:13%;
+	top:0px;
+	margin-top:170px;
+	position:absolute;
+}
+	
+.extra {
+	right:100px;
+	top:40px;
+	font-size:2vw;
+	width:40%;
+	position:absolute;
+	border:1px solid black;
+	border-radius:30px;
+	padding:10px;
+	padding-left:20px;
+	background-color: rgba(242, 198, 166, 0.8);
+}
+.aside {
+	margin-left:20px;
+	margin-top:10px;
+
+}
+
+
+img {
+	border-radius:150px;
+	border:1px solid blue;
+}
+
+a {
+	text-decoration:none;
+	color:black;
+}
+
+button {
+	background:transparent;
+	background-color:orange;
+	border-radius:20px;
+	border:1px solid brown;
+	padding:5px;
+	width:120px;
+	margin-bottom:10px;
+
+}
+
+button:hover {
+	color:blue;
+	padding:8px;
+	margin-bottom:4px;
+	width:130px;
+	background-color:#ffc14d
+}
+
+ul {
+	margin: auto;
+	font-family:lato;
+	padding:0px;
+}
+li {
+	margin:10px;
+	text-align:center;
+	margin-top:20px;
+	float:center;
+	list-style:none;
+	font-size:20px;
+
+}
+
+@media screen and (max-width:1080px) {
+	.content {
+		width:73%;
+		height:400px;
+	}
+	.nav {
+		width:15%;
+	}
+	.extra {
+		right:60px;
+		top:25px;
+		height:300px;
+		font-size:22px;
+	}
+	li {
+		font-size: 18px;
+	}
+	button {
+		width:110px;
+		margin-left:0px;
+	}
+	button:hover {
+		width:110px;
+	}
+
+}
+@media screen and (max-width:750px) {
+	.content {
+		width:70%;
+	}
+	.extra {
+		right:50px;
+		top:20px;
+	}
+	button {
+		font-size: 12px;
+		width:90px;
+		margin-left:0px;
+	}
+	button:hover {
+		width:90px;
+	}
+}
+@media screen and (max-width:660px) {
+	li {
+		float:left;
+
+	}
+	ul {
+		float:left;
+		margin-left:50px;
+	}
+	.nav {
+		left:20px;
+		width:90%;
+		top:0px;
+		margin-top:120px;
+		position:absolute;
+	}
+	.content {
+		margin: auto;
+		margin-top:215px;
+		width:90%;
+		height:300px;
+	}
+	.extra {
+		height:260px;
+		font-size:18px;
+	}
+	button {
+		width:110px;
+		margin-left:0px;
+		font-size:15px;
+	}
+	button:hover {
+		width:110px;
+	}
+}
+@media screen and (max-width:550px) {
+	button {
+		width:95px;
+		font-size:12px;
+	}
+	button:hover {
+		width:95px;
+	}
+	ul {
+		float:left;
+		margin-left:30px;
+	}
+}
+@media screen and (max-width:400px) {
+	button {
+		width: 50px;
+		font-size:8px;
+	}
+	button:hover {
+		width:50px;
+	}
+	ul {
+		float:left;
+		margin-left:10px;
+	}
+	.extra {
+		font-size:12px;
+	}
+}

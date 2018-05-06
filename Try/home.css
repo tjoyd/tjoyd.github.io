@@ -206,17 +206,17 @@ li {
 }
 @media screen and (max-width:400px) {
 	button {
-		width: 50px;
+		width: 70px;
 		font-size:8px;
 	}
 	button:hover {
-		width:50px;
+		width:70px;
 	}
 	ul {
 		float:left;
 		margin-left:10px;
 	}
 	.extra {
-		font-size:12px;
+		font-size:14px;
 	}
 }

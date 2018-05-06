@@ -208,6 +208,7 @@ li {
 	button {
 		width: 80px;
 		font-size:8px;
+		background-color:aqua;
 	}
 	button:hover {
 		width:80px;

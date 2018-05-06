@@ -206,11 +206,11 @@ li {
 }
 @media screen and (max-width:400px) {
 	button {
-		width: 70px;
+		width: 80px;
 		font-size:8px;
 	}
 	button:hover {
-		width:70px;
+		width:80px;
 	}
 	ul {
 		float:left;

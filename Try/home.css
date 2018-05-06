@@ -195,6 +195,7 @@ li {
 	button {
 		width:95px;
 		font-size:12px;
+		background-color:grey;
 	}
 	button:hover {
 		width:95px;

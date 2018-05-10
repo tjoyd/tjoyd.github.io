@@ -98,8 +98,8 @@ a > img {
 }
 @media screen and (max-width:1100px) {
 	.container {
-		height:300px;
-		width:300px;
+		height:310px;
+		width:310px;
 	}
 	.pic {
 		margin-left:60px;
@@ -121,7 +121,7 @@ a > img {
 }
 @media screen and (max-width:800px) {
 	.container {
-		height:280px;
+		height:290px;
 		width:280px;
 	}
 	.pic {
@@ -146,14 +146,14 @@ a > img {
 		box-shadow:2px 2px 10px gold;
 	}
 	.pic {
-		margin-left:35px;
+		margin-left:42px;
 	}
 	.nav {
 		position:fixed;
 		left:5px;
 	}
 	.data {
-		margin-top:34px;
+		margin-top:14px;
 		padding:8px;
 		width:190px;
 		font-size:17px;

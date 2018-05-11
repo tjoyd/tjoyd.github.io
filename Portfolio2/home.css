@@ -84,7 +84,7 @@ button.active {
 h1 {
 	font-size:20px;
 	text-align:center;
-	background-color:rgba(0, 255, 255 , 0.4);
+	background-color:rgba(0, 255, 255 , 0.1);
 	padding:7px;
 	border-radius:10px;
 	color:brown;
@@ -92,6 +92,13 @@ h1 {
 	top: 10px;
 	right:150px;
 	position:fixed;
+	animation-name:header;
+	animation-duration:6s;
+	animation-iteration-count:infinite;
+}
+@keyframes header {
+	from {background-color: rgba(0, 255, 255 , 0.1) ;}
+    to {background-color: rgba(0, 255, 255 , 1.0);}
 }
 .social {
 	margin-left:120px;
@@ -101,7 +108,7 @@ a > img {
 }
 @media screen and (max-width:1100px) {
 	.container {
-		height:310px;
+		height:330px;
 		width:310px;
 	}
 	.pic {
@@ -143,6 +150,7 @@ a > img {
 @media screen and (max-width:640px) {
 	.container {
 		width:200px;
+		height:330px;
 		margin-left:200px;
 		border-radius:5px;
 		border:none;

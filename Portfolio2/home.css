@@ -15,7 +15,7 @@ button {
 	border:3px solid aqua;
 }
 button:hover {
-	background-color:#87CEFA;
+	background-color:rgba(0, 255, 255 , 1.0);
 	height:115px;
 	width:115px;
 	margin-left:7.5px;
@@ -80,11 +80,20 @@ button.active {
 }
 .pic > img {
 	width:125px;
+	opacity:80%;
+	animation-name:image;
+	animation-duration:6s;
+	animation-iteration-count:infinite;	
+}
+@keyframes image {
+	0% {border:2px solid lime;}
+    34% {border:2px solid orange;}
+    70%{border:2px solid yellow;}
 }
 h1 {
 	font-size:20px;
 	text-align:center;
-	background-color:rgba(0, 255, 255 , 0.1);
+	background-color:rgba(0, 255, 255 , 0.7);
 	padding:7px;
 	border-radius:10px;
 	color:brown;
@@ -97,7 +106,7 @@ h1 {
 	animation-iteration-count:infinite;
 }
 @keyframes header {
-	from {background-color: rgba(0, 255, 255 , 0.1) ;}
+	from {background-color: rgba(0, 255, 255 , 0.7) ;}
     to {background-color: rgba(0, 255, 255 , 1.0);}
 }
 .social {
@@ -235,7 +244,7 @@ a > img {
 	}
 	.container {
 		width:170px;
-		margin-left:80px;
+		margin-left:90px;
 		margin-top:80px;
 		border-radius:5px;
 	}

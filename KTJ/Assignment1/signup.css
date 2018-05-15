@@ -60,9 +60,12 @@ input , select {
 	border-radius:10px;
 	border:none;
 	margin:20px;
+	outline:none;
 }
 input:focus {
 	outline:none;
+	border:2px solid blue;
+	margin:19px;
 }
 
 button {

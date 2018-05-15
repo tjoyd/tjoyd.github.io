@@ -68,6 +68,8 @@ input {
 }
 input:focus {
 	outline:none;
+	border:2px solid blue;
+	margin:19px;
 }
 
 button {

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Sign Up Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="signup.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+</head>
+<body>
+
+
+<div class="content">
+<div class="container">
+	<div class="try">
+	<p> Fill up this form</p>
+	<span class="red"> * </span>fields are necessary.<br><br>
+	<form action="#">
+		<span class="red" >* </span> <span class="title" >Username :</span><br/>
+			<input type="text" name="username" placeholder="Enter Username" title="Username must be unique" required><br>
+		<span class="red" >* </span><span class="title" > Email :</span><br/>
+			<input type="email" name="email" placeholder="Enter Email Address" required><br>
+		<span class="red" >* </span><span class="title" > Password :</span><br/>
+			<input type="password" name="password" title="Strong password is always better" placeholder="Enter Password" required><br>
+		<span class="red" >* </span><span class="title" > Birthday :</span><br/>
+			<input type="date" name="birthday" max="" required><br>
+		<span class="red" >* </span><span class="title" > Gender :</span><br/>
+			<select name="gender" required>
+				<option value="male"> Male </option>
+				<option value="female"> Female </option>
+				<option value="other"> Other </option>
+			</select>
+		<br><span class="title"  style="padding-left:16px" >Address :</span><br>
+			<input type="address" name="address" placeholder="Enter valid address" ><br>
+		<span class="term" >by signing up you accept our <a href="#">Terms & Regulation</a><br></span>
+			<button type="submit" title="Confirm Sign Up"> Sign Up</button>
+	</form>
+	</div>
+	<p class="login">Already have account? <a href="login.html"><button>Log In</button></a></p>
+</div>
+</div>
+<div class="header">
+<h1> KTJ Summer Workshop</h1>
+</div><footer>
+
+</footer>
+</body>
+
+</html>

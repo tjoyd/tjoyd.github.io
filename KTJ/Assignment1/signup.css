@@ -114,12 +114,13 @@ button:hover {
 @media screen and (max-width:780px) {
 	.container {
 		width:300px;
+		padding-left:40px;
 		
 	}
 }
 @media screen and (max-width:600px) {
 	.container {
-		width:300px;
+		width:260px;
 		border-radius:5px;
 	}
 	.header {
@@ -131,11 +132,12 @@ button:hover {
 		color:lime;
 	}
 	.container {
-		width:240px;
+		width:200px;
 		border-radius:5px;
+		padding-left:30px;
 	}
 	.header {
-		font-size:15px;
+		font-size:13px;
 		height:80px;
 	}
 }

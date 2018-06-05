@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignments Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="home.css">
+<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+
+<script src="math.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="left">
+		<div class="lockerA" onclick="move_out('A');">
+			Locker for Player A
+			<p><span id="no_playerA">2</span> A</p>
+		</div>
+		<div class="chatbox A" id="chatboxA" onclick="move_out('A');" >
+			<img src="chatbox.png" alt="chatbox">
+			<div class="text">Click locker to release 2nd one</div>
+		</div>
+		<div class="start_play">
+			<button onclick="start_play();">Start Here</button>
+		</div>
+	</div>
+	<div class="middle">
+		hi middle
+		
+		<div class="grid-container1">
+			<div class="grid-item1 t1 p1" id="1" onclick="move_on('1');" ></div>
+			<div class="grid-item1 2" id="2" onclick="move_on('2');"></div>
+			<div class="grid-item1 3" id="3" onclick="move_on('3');"></div>
+			<div class="grid-item1 4" id="4" onclick="move_on('4');"></div>
+			<div class="grid-item1 5" id="5" onclick="move_on('5');"></div>
+			<div class="grid-item1 6" id="6" onclick="move_on('6');"></div>
+			<div class="grid-item1 7" id="7" onclick="move_on('7');"></div>
+			<div class="grid-item1 8" id="8" onclick="move_on('8');"></div>
+		</div>
+		<div class="grid-container2">
+			<div class="grid-item2 1" id="28" onclick="move_on('28');"></div>
+			<div class="grid-item2 2" id="27" onclick="move_on('27');"></div>
+			<div class="grid-item2 3" id="26" onclick="move_on('26');"></div>
+			<div class="grid-item2 4" id="25" onclick="move_on('25');"></div>
+			<div class="grid-item2 5" id="24" onclick="move_on('24');"></div>
+			<div class="grid-item2 6" id="23" onclick="move_on('23');"></div>
+		</div>
+		<div class="grid-container3">
+			<div class="grid-item2 1" id="9" onclick="move_on('9');"></div>
+			<div class="grid-item2 2" id="10" onclick="move_on('10');"></div>
+			<div class="grid-item2 3" id="11" onclick="move_on('11');"></div>
+			<div class="grid-item2 4" id="12" onclick="move_on('12');"></div>
+			<div class="grid-item2 5" id="13" onclick="move_on('13');"></div>
+			<div class="grid-item2 6" id="14" onclick="move_on('14');"></div>
+		</div>
+		<div class="grid-container4">
+			<div class="grid-item1 t1" id="22" onclick="move_on('22');"></div>
+			<div class="grid-item1 2" id="21" onclick="move_on('21');"></div>
+			<div class="grid-item1 3" id="20" onclick="move_on('20');"></div>
+			<div class="grid-item1 4" id="19" onclick="move_on('19');"></div>
+			<div class="grid-item1 5" id="18" onclick="move_on('18');"></div>
+			<div class="grid-item1 6" id="17" onclick="move_on('17');"></div>
+			<div class="grid-item1 7" id="16" onclick="move_on('16');"></div>
+			<div class="grid-item1 t8" id="15" onclick="move_on('15');"></div>
+		</div>
+		<div class="play" id="play">
+			
+			<div class="print">
+				<p id="player_id">Now player A's roll :</p>
+				<button id="roll" onclick="roll_it()">ROll ME</button>
+				<form name="roll_input">
+					ROLL : <input type="text" name="roll_in" value="0">
+				</form>
+				<hr>
+				<p><span id="player_id2">A</span> , your roll was <span id="print">?</span></p>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<div class="home">
+			<div class="scoreA">
+				<p>Player A</p>
+				<p id="scoreA">0</p>
+			</div>
+			<div class="scoreB">
+				<p>Player B</p>
+				<p id="scoreB">0</p>
+			</div>
+		
+		</div>
+		
+		<div class="lockerB" onclick="move_out('B');">
+			Locker for Player B
+			<p><span id="no_playerB">2</span> B</p>
+		</div>
+		<div class="chatbox B" id="chatboxB" onclick="move_out('B');" >
+			<img src="chatbox.png" alt="chatbox">
+			<div class="text">Click locker to release 2nd one</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="ludo.js"></script>
+</body>
+</html>

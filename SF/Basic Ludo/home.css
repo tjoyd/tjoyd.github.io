@@ -1,0 +1,151 @@
+body {
+	background:aqua;
+	overflow:auto;
+	}
+.left {
+	width:220px;
+	height:500px;
+	margin-left:150px;
+	position:absolute;
+	top:50px;
+}
+.middle {
+	width:588px;
+	height:500px;
+	background:transparent;
+	position:absolute;
+	top:30px;
+	left:380px;
+	padding:12px;
+}
+.right {
+	width:200px;
+	height:500px;
+
+	margin:0px;
+	position:absolute;
+	top:50px;
+	left:910px;
+}
+.grid-container1 {
+	display:grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+	margin:0px;
+	padding:0px;
+	width:504px;
+}
+.grid-container2 {
+	display:grid;
+	grid-template-columns: auto;
+	margin:0px;
+	padding:0px;
+	width:584px;
+}
+.grid-container3 {
+	display:grid;
+	grid-template-columns: auto;
+	position:relative;
+	left:441px;
+	top:-378px;
+}
+.grid-container4 {
+	display:grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+	width:504px;
+	position:relative;
+	top:-380px;
+}
+.grid-item1  {
+	width:62px;
+	height:47px;
+	background:orange;
+	border: 1px solid black;
+	border-left: none;
+	margin:0px;
+	text-align:center;
+	padding-top:15px;
+}
+.grid-item2  {
+	width:62px;
+	height:47px;
+	background:orange;
+	border: 1px solid black;
+	border-top: none;
+	margin:0px;
+	text-align:center;
+	vertical-align:middle;
+	padding-top:15px;
+}
+.grid-item1.t1 {
+	border-left:1px solid black;
+}
+.grid-item1.t1.p1 {
+	background:red;
+}
+.t8 {
+	background:blue;
+}
+#play {
+	display:block;
+	padding:10px;
+	border:1px solid black;
+	width:200px;
+	border-radius:10px;
+	position:relative;
+	top:-750px;
+	left:159px;
+}
+.print {
+	width:150px;
+	height:150px;
+	margin: auto;
+}
+button#roll {
+	margin-left:10px;
+}
+.chatbox.B {
+	position:relative;
+	top:-272px;
+	display:none;
+}
+.chatbox.A {
+	position:relative;
+	top:-32px;
+	display:none;
+}
+.text {
+	position:relative;
+	top:-140px;
+	left:48px;
+	width:100px;
+	text-align:justify;
+}
+.lockerA , .lockerB  , .home{
+	width:80%;
+	height:70px;
+	margin: 20px auto;
+	padding:10px;
+	border:1px solid black;
+	text-align:center;
+	background:white;
+}
+.lockerB {
+	margin-top:280px;
+}
+.lockerA > p , .lockerB > p {
+	font-size:27px;
+}
+.scoreA {
+	padding:0px;
+	position:relative;
+	left:-4px;
+	width:80px;
+}
+.scoreB {
+	position:relative;
+	border-left:1px solid black;
+	top:-68px;
+	left:78px;
+	padding:0px;
+	width:80px;
+}

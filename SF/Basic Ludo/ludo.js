@@ -9,9 +9,9 @@ var move_count = 0; /* Can't remember why created */
 var pointA = 0; /* how many reached the end position */
 var pointB = 0; /* how many reached the end position */
 var six_count = 0 ; /* to limit roll of 6 to max 2 times */
-var extract = 0;
+var extract = 0; /* My variable is my variable , none of your variable */
 
-/* Till now no use of start_play() */
+/* Till now no use of start_play() , later it will be implemented as tutorial part */
 function start_play() {
 	document.getElementById('play').style.display = "block";
 	alert(playerB[0]);
@@ -406,22 +406,31 @@ function move_out(player) {
 	/*alert("move out time is "+time);*/
 	
 }
+
+/* Showing position of players 
+
+also controls the cut / eaten properties 
+*/
+
 function show(position) {
 	/*alert("position is "+position);
 	alert("time is "+time);*/
-	if (( time % 2)== 0 ) {
+	/* Determinig Player B or A */
+	if (( time % 2)== 0 ) { 
 		if (playerB[0] == playerB[1]) {
 			document.getElementById(position).innerHTML = " 2 B";
 		} else {
 			document.getElementById(position).innerHTML = " 1 B";
 		}
+		/*Determinig eaten properties */
 		if (position == playerA[0]) {
-			playerA[0] = 0;
 			if (playerA[1] == 0) {
 				document.getElementById('no_playerA').innerHTML = "2";
 			} else {
 				document.getElementById('no_playerA').innerHTML = "1";
 			}
+			playerA[0] = player[1];
+			playerA[1] = 0; /* Position swaping of 0 and 1 */
 		} else if (position == playerA[1]) {
 			playerA[1] = 0;
 			if (playerA[0] == 0) {
@@ -437,15 +446,16 @@ function show(position) {
 			document.getElementById(position).innerHTML = " 1 A";
 		}
 		if (position == playerB[0]) {
-			playerB[0] = 0;
 			if (playerB[1] == 0) {
 				document.getElementById('no_playerB').innerHTML = "2";
 			} else {
 				document.getElementById('no_playerB').innerHTML = "1";
 			}
+			playerB[0] = playerB[1];
+			playerB[1] = -1;
 		} else if (position == playerB[1]) {
-			playerB[1] = 0;
-			if (playerB[0] == 0) {
+			playerB[1] = -1;
+			if (playerB[0] == -1) {
 				document.getElementById('no_playerB').innerHTML = "2";
 			} else {
 				document.getElementById('no_playerB').innerHTML = "1";

@@ -1,0 +1,27 @@
+body {
+	background:aqua;
+	}
+.main {
+	width:200px;
+	height:300px;
+	margin:50px auto;
+	background:grey;
+	border:10px solid darkgrey;
+	padding:10px;
+}
+.woo {
+	margin-left:50px;
+	padding:20px;
+}
+.button {
+	margin-left:40px;
+}
+input.but {
+	width:40px;
+	height:30px;
+}
+input.view {
+	width:186px;
+	height:20px;
+	padding:5px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="calculator.css">
+<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+
+</head>
+<body>
+<div class="main">
+<form name="calc">
+<table>
+<td><tr><input class="view a" type="text" name="input2" value="0" readonly></tr></td>
+<br>
+<td><tr><input class="view b" type="text" name="input" value="0" readonly></tr></td>
+<br/>
+</table>
+<div class="button">
+<table  class="woo">
+<td><tr><input class="but" type="button" value="9" onclick="number('9');" ></tr>
+<tr><input class="but" type="button" value="8" onclick="number('8');" ></tr>
+<tr><input class="but" type="button" value="7" onclick="number('7');" ></tr>
+</td><br>
+<td><tr><input class="but" type="button" value="6" onclick="number('6');" ></tr>
+<tr><input class="but" type="button" value="5" onclick="number('5');" ></tr>
+<tr><input class="but" type="button" value="4" onclick="number('4');" ></tr></td>
+<br/>
+<td><tr><input class="but" type="button" value="3" onclick="number('3');" ></tr>
+<tr><input class="but" type="button" value="2" onclick="number('2');" ></tr>
+<tr><input class="but" type="button" value="1" onclick="number('1');" ></tr></td>
+<br/>
+<td><tr><input class="but" type="button" value="." onclick="calc.input2.value = (calc.input.value += '.')" ></tr>
+<tr><input class="but" type="button" value="0" onclick="calc.input2.value = (calc.input.value += '0')" ></tr>
+<tr><input class="but" type="button" value="/" onclick="calc.input2.value = (calc.input.value += '/')" ></tr></td>
+<br/>
+<td><tr><input class="but" type="button" value="+" onclick="calc.input2.value = (calc.input.value += '+')" ></tr></td>
+<td><tr><input class="but" type="button" value="-" onclick="calc.input2.value = (calc.input.value += '-')" ></tr></td>
+<td><tr><input class="but" type="button" value="*" onclick="calc.input2.value = (calc.input.value += '*')" ></tr></td>
+<br>
+<td><tr><input class="but" type="button" value="=" onclick="calc.input.value = eval(calc.input.value);" ></tr></td>
+<td><tr><input class="but" type="button" value="AC" onclick="calc.input2.value = calc.input.value = '0'" ></tr></td>
+<td><tr><input class="but" type="button" value="DEL" onclick="calc.input2.value = (calc.input.value = calc.input.value.slice(0,(calc.input.value.length - 1 )))" ></tr></td>
+
+</table>
+</div>
+</form>
+</div>
+<script>
+
+function number(num) {
+	if (document.calc.input.value == "0" ) {
+		document.calc.input.value="";
+		document.calc.input2.value="";
+	}
+	
+	document.calc.input.value += num;
+	document.calc.input2.value += num;
+}
+
+</script>
+</body>
+</html>

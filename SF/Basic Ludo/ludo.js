@@ -12,9 +12,22 @@ var six_count = 0 ; /* to limit roll of 6 to max 2 times */
 var extract = 0; /* My variable is my variable , none of your variable */
 
 /* Till now no use of start_play() , later it will be implemented as tutorial part */
-function start_play() {
-	document.getElementById('play').style.display = "block";
-	alert(playerB[0]);
+function tips() {
+	document.getElementById('tips1').style.display = "block";
+	alert("Tips 1");
+	
+	}
+function tips1() {
+	document.getElementById('tips1').style.display = "none";
+	document.getElementById('tips2').style.display = "block";
+	alert("Tips 2");
+	
+	}
+function tips2() {
+	document.getElementById('tips2').style.display = "none";
+	document.getElementById('tips2').style.display = "none";
+	alert("End");
+	
 	}
 /* Main roll_it() function transfered to move() function*/
 function roll_it() {

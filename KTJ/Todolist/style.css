@@ -1,0 +1,47 @@
+body {
+	background:#20218f3d;
+	width:100%;
+	}
+#content {
+	max-width:704px;
+	margin:auto;
+	padding:20px;
+	border-radius:5px;
+	box-shadow:3px 3px 7px #317db0;
+}
+.navbar {
+	box-shadow:3px 3px 5px #20b8a2;
+}
+.text {
+	max-width:400px;
+}
+.image {
+	position: relative;
+	left:470px;
+	top:-40px;
+}
+.login {
+	width:700px;
+	margin:auto;
+}
+.registration {
+	width:440px;
+	margin:auto;
+}
+.register {
+	padding:20px;
+	border-radius:10px;
+}
+input:focus {
+		outline:0;
+	}
+.navbar.is-primary {
+  background-color: #22fac1; /*Real one is #00d1b2*/
+  color: #fff;
+}
+@media screen and (max-width: 1008px) {
+	.title {
+		margin-bottom:0px;
+		font-size:20px;
+	}	
+}

@@ -60,7 +60,7 @@
           FB.api(
               '/1823970987702065',
               'GET',
-              {"fields":"member_count,feed"},
+              {"fields":"member_count,feed,name,posts,owner"},
               function(response) {
                   // Insert your code here
                   if(response && !response.error){

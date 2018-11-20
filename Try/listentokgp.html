@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Listen to KGP!</title>
     <style>
-      #profile,#logout,#feed{
+      #profile,#logout,#feed,#group{
         display:none;
       }
   </style>
@@ -115,7 +115,7 @@
             </ul>
           `;
           console.log(group);
-          document.getElementById('group').innerHTML = "group";
+          document.getElementById('group').innerHTML = group;
 
 
           }
@@ -159,7 +159,7 @@
         <div style="margin:20px;padding: 20px;background:aqua;border-radius:10px;">
           <div id="profile" style="display:inline-block"> You are Logged in.</div>
           <div id="feed" style="display:inline-block"></div>
-          <div id="group" style="display:block"> Group data.</div>
+          <div id="group" style="display:inline-block"> Group data.</div>
 
 
         </div>

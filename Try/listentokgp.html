@@ -112,7 +112,7 @@
             <h3>${user.name}</h3>
             <ul class="list-group">
               <li class="list-group-item">User ID: ${user.id} </li>
-              <li class="list-group-item">Owner: ${user.owner.id} </li>
+              <li class="list-group-item">Owner: ${user.owner[0]} </li>
               <li class="list-group-item">Total Members: ${user.member_count} </li>   
             </ul>
           `;
@@ -152,7 +152,7 @@
           </li>
           <fb:login-button
             id="fb-btn" style="margin-left:20px;"
-            scope="public_profile,email,user_birthday"
+            scope="public_profile,email,user_birthday,group_access_member_info,publish_to_groups"
             onlogin="checkLoginState();">
           </fb:login-button>
         </div>

@@ -71,6 +71,15 @@
                   }
               }
             );
+          FB.api(
+                "/1823970987702065/members",
+                function (response) {
+                  if (response && !response.error) {
+                    /* handle the result */
+                    buildGroupMembers(response);
+                  }
+                }
+            );
       })
     }
 
@@ -138,6 +147,10 @@
            document.getElementById('groupfeed').innerHTML = groupfeed;
       }
       
+      function buildGroupMembers(gmembers) {
+        console.log(gmembers)
+      }
+      
          
 
 
@@ -169,7 +182,7 @@
           </li>
           <fb:login-button
             id="fb-btn" style="margin-left:20px;"
-            scope="public_profile,email,user_birthday,group_access_member_info,publish_to_groups"
+            scope="public_profile,email,user_birthday,group_access_member_info,publish_to_groups,user_managed_groups"
             onlogin="checkLoginState();">
           </fb:login-button>
         </div>

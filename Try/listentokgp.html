@@ -66,6 +66,7 @@
                   if(response && !response.error){
                     console.log(response);
                     buildGroup(response);
+                    buildFeed(response);
                   }
               }
             );
@@ -112,16 +113,28 @@
             <ul class="list-group">
               <li class="list-group-item">User ID: ${user.id} </li>
               <li class="list-group-item">Owner: ${user.owner[0]} </li>
-              <li class="list-group-item">Total Members: ${user.member_count} </li>
-              <li class="list-group-item">Group Posts: ${user.feed} </li>
-              
+              <li class="list-group-item">Total Members: ${user.member_count} </li>   
             </ul>
           `;
           console.log(group);
           document.getElementById('group').innerHTML = group;
 
-
           }
+      
+         function buildFeed(feed) {
+           let groupfeed = '<h3> Group Feed </h3>';
+           for(let i in feed.data) {
+             if(feed.data[i].message) {
+               groupfeed += `
+                  <div class="well">
+                      ${feed.data[i].message}
+                  </div>
+                `;
+             }
+           }
+           
+           document.getElementById('groupfeed').innerHTML = groupfeed;
+
 
 
       function logout(){
@@ -163,6 +176,7 @@
           <div id="profile" style="display:inline-block"> You are Logged in.</div>
           <div id="feed" style="display:inline-block"></div>
           <div id="group" style="display:inline-block"> Group data.</div>
+          <div id="groupfeed" style="display:inline-block"></div>
 
 
         </div>

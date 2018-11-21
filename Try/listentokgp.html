@@ -123,6 +123,7 @@
           }
       function buildFeed(gfeed) {
            let groupfeed = '<h3> Group Feed </h3>';
+           console.log(gfeed.feed);
            for(let i in gfeed.feed.data) {
              console.log(i);
              if(gfeed.feed.data[i].message) {

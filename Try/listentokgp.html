@@ -121,20 +121,7 @@
 
           }
       
-         function buildFeed(feed) {
-           let groupfeed = '<h3> Group Feed </h3>';
-           for(let i in feed.data) {
-             if(feed.data[i].message) {
-               groupfeed += `
-                  <div class="well">
-                      ${feed.data[i].message}
-                  </div>
-                `;
-             }
-           }
-           
-           document.getElementById('groupfeed').innerHTML = groupfeed;
-      }
+         
 
 
       function logout(){

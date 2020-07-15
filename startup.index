@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	 
+	 <!--Import icons-->
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+
+   <body >
+     <div class="navbar-fixed">
+     <nav >
+        <div style="class="nav-wrapper">
+          <a href="#" class="brand-logo right">Logo</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="sass.html">Rentberry</a></li>
+            <li><a href="badges.html">Rent</a></li>
+            <li><a href="collapsible.html">Buy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div style="height:600px;background-color:#00adff59;margin:0px">
+      <h2 style="text-align:center;margin:0px;font-weight: 700;font-size: 72px;line-height: 72px;padding-top:30px">Renting Done Right. Finally.</h2>
+    </div>
+	
+	<div style="margin:0px;padding:0px;heigth:200px;background-color:lime;">
+		<div style="height:200px">
+			<h1 style="text-align:center;margin:0px"> 200 x width </h1>
+			
+		</div>
+	</div>
+	
+	<div style="margin:0px;">
+	<div class="row" style="padding:100px;padding-top:50px;background-color:white;margin:0px;">
+      <div class="col s6" style="padding:50px">
+	  <img _ngcontent-rb-app-c15="" alt="" src="https://cdn.rentberry.com/static/rentberry/browser/assets/images/covid/covid.svg?v=1591025281440">
+	  <h3 style="font-weight: 800" >Rent Safe </br>During <span style="color:#7b53c1">COVID-19</span></h3></div>
+      <div class="col s6" style="padding-top:50px;font-family: proxima-nova,sans-serif;"><h5 style="font-size: 25px;">Rentberry is the first platform that offers a fully digital rental experience. It automates all the standard rental tasks from submission of personal information, credit reports and custom offers to scheduling tours, eSigning rental agreements and sending maintenance requests. Not only Rentberry can save valuable time but it also helps save lives.</h5></div>
+    
+	</div>
+	<div style="width:80%;position: absolute;margin-left:10%">
+		<hr>
+	</div>
+	
+	<div style="text-align:center;background-color:white;padding:50px;">
+		<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 48px;">Perform All Tasks Online to</br> <span style="color:#7b53c1">Minimize Direct Contact</span></h3>
+		
+	</div>
+	</div>
+	<!-- CARDS HERE || FOR 3 CARDS - DEMAND ETC -->
+	
+	<div class="row">
+	<div class="col s12 m1"> </div>
+	<div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+	<div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+	<div class="col s12 m1"> </div>
+	
+	</div>
+	
+	<!-- EXTRA PARAGRAPH -->
+	</br>
+	</br>
+	<div style="width:45%;margin:auto;font-size: 20px;font-family: proxima-nova,sans-serif;">
+		<p style="text-align:center">See the current highest proposal and the number of people who applied for the property, so you can make an informed decision and negotiate the price. All this now can be done online with Rentberry.</p>
+	</div>
+	</br>
+	</br>
+	
+	<!-- CARDS HERE || FOR 2 CARDS - PRIVATE OR MASS -->
+	
+	<div class="row" style="width:80%;margin:auto">
+	<div class="col s12 m1"> </div>
+	<div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+	<div class="col s12 m2"> </div>
+	<div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+	<div class="col s12 m1"> </div>
+	</div>
+	
+	<div style="margin:0px;padding:0px;heigth:100px;background-color:white;">
+		<div style="height:100px">	</div>
+	</div>
+	
+	<div style="width:80%;position: absolute;margin-left:10%">
+		<hr>
+	</div>
+	
+	
+	
+	<div style="text-align:center;background-color:white;padding:50px;">
+		<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 48px;">Featured Cities</br> <span style="color:#7b53c1">Minimize Direct Contact</span></h3>	
+	</div>
+	
+	<!-- Trial Cards -->
+	<!-- First Row -->
+	<div class="row" style="width:94%;margin:0">
+	<div class="col s12 m2"> </div>
+	<div class="col s12 m3">
+		<div class="card small">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="https://materializecss.com/images/office.jpg">
+			</div>
+			
+			<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		</div>
+    </div>
+	<div class="col s12 m3">
+		<div class="card small">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="https://materializecss.com/images/office.jpg">
+			</div>
+			
+			<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 m3">
+		<div class="card small">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" src="https://materializecss.com/images/office.jpg">
+			</div>
+			
+			<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		</div>
+    </div>
+	<div class="col s12 m2"> </div>
+	</div>
+	
+	<!-- Second Row -->
+	
+	
+	<div style="margin:0px;padding:0px;heigth:100px;background-color:white;">
+		<div style="height:100px">	</div>
+	</div>
+	
+	<!-- Footer -->
+	<footer class="page-footer" style="background-color:#2e2d36">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul >
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+            </div>
+          </div>
+        </footer>
+	
+
+     <!--JavaScript at end of body for optimized loading-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+   </body>
+ </html>

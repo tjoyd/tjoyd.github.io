@@ -4,28 +4,55 @@
      <!--Import Google Icon Font-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-     <!--Import materialize.css-->
-     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	 
 	 <!--Import icons-->
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
      <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	 
+	 <!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    </head>
 
    <body >
-     <div class="navbar-fixed">
-     <nav >
-        <div style="class="nav-wrapper">
-          <a href="#" class="brand-logo right">Logo</a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="sass.html">Rentberry</a></li>
-            <li><a href="badges.html">Rent</a></li>
-            <li><a href="collapsible.html">Buy</a></li>
-          </ul>
-        </div>
-      </nav>
+   
+   <!-- NAVBAR HERE -->
+   
+    <div class="navbar-fixed">
+		<!-- Dropdown Structure -->
+		
+		<!-- For PROGRAMS-->
+		<ul id="dropdown1" class="dropdown-content">
+		  <li><a href="#!">one</a></li>
+		  <li class="divider"></li>
+		  <li><a href="#!">two</a></li>
+		  
+		  <li><a href="#!">three</a></li>
+		</ul>
+		
+		<!-- For ABOUT US-->
+		<ul id="dropdown2" class="dropdown-content">
+		  <li><a href="#!">one</a></li>
+		  <li class="divider"></li>
+		  <li><a href="#!">two</a></li>
+		  
+		  <li><a href="#!">three</a></li>
+		</ul>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo" style="padding-left:20px;">Funda Session</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="sass.html">HOME</a></li>
+					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">PROGRAMS<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a href="collapsible.html">BLOG</a></li>
+					<li><a class="dropdown-trigger" href="#!" data-target="dropdown2">ABOUT US<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a href="collapsible.html">CONTACT US</a></li>
+				</ul>
+			</div>
+		</nav>
     </div>
 
     <div style="height:600px;background-color:#00adff59;margin:0px">
@@ -51,52 +78,63 @@
 		<hr>
 	</div>
 	
-	<div style="text-align:center;background-color:white;padding:50px;">
+	<div style="text-align:center;background-color:white;padding:50px;padding-bottom:0px;margin-bottom:0px">
 		<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 48px;">Perform All Tasks Online to</br> <span style="color:#7b53c1">Minimize Direct Contact</span></h3>
 		
 	</div>
 	</div>
 	<!-- CARDS HERE || FOR 3 CARDS - DEMAND ETC -->
+	<!--
+	<div class="row" style="width:94%;margin:auto;">
+	<div class="col s12 m1"> </div>
 	
-	<div class="row">
+	<div class="col s12 m10">
+	<div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+	<div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+	</div>
 	<div class="col s12 m1"> </div>
-	<div class="col s12 m3">
-      <div class="card">
-        <div class="card-image">
-          <img src="https://materializecss.com/images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-          
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m3">
-      <div class="card">
-        <div class="card-image">
-          <img src="https://materializecss.com/images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-          
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-	<div class="col s12 m3">
-      <div class="card">
-        <div class="card-image">
-          <img src="https://materializecss.com/images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-          
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-	<div class="col s12 m1"> </div>
+	
+	</div>
+	-->
+	<div class="carousel" style="height:530px;margin:0px;padding:0px" >
+	
+		<a class="carousel-item" style="width:400px;margin-top:0px;padding-top:0px" href="#one!"><img class="z-depth-3" style="margin:0px;padding:0px;" src="https://cdn.rentberry.com/static/rentberry/browser/assets/images/promo/custom-offer1.webp?v=1592385900927"></a>
+		<a class="carousel-item" style="width:400px;margin-top:0px;padding-top:0px" href="#two!"><img class="z-depth-3" style="margin:0px;padding:0px;" src="https://cdn.rentberry.com/static/rentberry/browser/assets/images/promo/custom-offer3.webp?v=1592385900927"></a>
+		<a class="carousel-item" style="width:400px;margin-top:0px;padding-top:0px" href="#three!"><img class="z-depth-3" style="margin:0px;padding:0px;" src="https://cdn.rentberry.com/static/rentberry/browser/assets/images/promo/custom-offer4.webp?v=1592385900927"></a>
 	
 	</div>
 	
@@ -149,58 +187,123 @@
 		<hr>
 	</div>
 	
-	
-	
+	<!-- Featured Coureses -->
+	<!-- Header of Featured Courses -->
 	<div style="text-align:center;background-color:white;padding:50px;">
-		<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 48px;">Featured Cities</br> <span style="color:#7b53c1">Minimize Direct Contact</span></h3>	
+		<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 48px;">Featured Courses</br></h3>
+		<p style="text-align:center;font-size:20px">Lmao! You are being pranked.</p>
+		
 	</div>
 	
-	<!-- Trial Cards -->
-	<!-- First Row -->
-	<div class="row" style="width:94%;margin:0">
-	<div class="col s12 m2"> </div>
-	<div class="col s12 m3">
-		<div class="card small">
-			<div class="card-image waves-effect waves-block waves-light">
-				<img class="activator" src="https://materializecss.com/images/office.jpg">
+	
+	<!-- Content of Featured Courses with cards -->
+	
+	<div>
+		<!-- First Row -->
+		<div class="row" style="width:100%;margin:auto">
+		<div class="col s12 m2"> </div>
+		<div class="col s12 m8">
+			<!-- Row 1 COL 1 -->
+			<div class="col s12 m4">
+				<div class="card hoverable">
+					<div class="card-image">
+						<img src="https://materializecss.com/images/office.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+				</div>
 			</div>
 			
-			<div class="card-reveal">
-				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+			<!-- Row 1 COL 2 -->
+			<div class="col s12 m4">
+				<div class="card hoverable">
+					<div class="card-image">
+						<img src="https://materializecss.com/images/office.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+				</div>
 			</div>
+			
+			<!-- Row 1 COL 3 -->
+			<div class="col s12 m4">
+				<div class="card hoverable">
+					<div class="card-image">
+						<img src="https://materializecss.com/images/office.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+				</div>
+			</div>
+				
+
 		</div>
-    </div>
-	<div class="col s12 m3">
-		<div class="card small">
-			<div class="card-image waves-effect waves-block waves-light">
-				<img class="activator" src="https://materializecss.com/images/office.jpg">
+		<div class="col s12 m2"> </div>
+		</div>
+	
+		<!-- Second Row -->
+		<div class="row" style="width:100%;margin:auto">
+		<div class="col s12 m2"> </div>
+		<div class="col s12 m8">
+			<!-- Row 1 COL 1 -->
+			<div class="col s12 m4">
+				<div class="card hoverable">
+					<div class="card-image">
+						<img src="https://materializecss.com/images/office.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+				</div>
 			</div>
 			
-			<div class="card-reveal">
-				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+			<!-- Row 1 COL 2 -->
+			<div class="col s12 m4">
+				<div class="card hoverable">
+					<div class="card-image">
+						<img src="https://materializecss.com/images/office.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+				</div>
 			</div>
+			
+			<!-- Row 1 COL 3 -->
+			<div class="col s12 m4">
+				<div class="card hoverable">
+					<div class="card-image">
+						<img src="https://materializecss.com/images/office.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+				</div>
+			</div>
+				
+
+		</div>
+		<div class="col s12 m2"> </div>
 		</div>
 	</div>
-	<div class="col s12 m3">
-		<div class="card small">
-			<div class="card-image waves-effect waves-block waves-light">
-				<img class="activator" src="https://materializecss.com/images/office.jpg">
-			</div>
-			
-			<div class="card-reveal">
-				<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-				<p>Here is some more information about this product that is only revealed once clicked on.</p>
-			</div>
+	
+	
+	<div style="text-align:center;">
+	<!-- About Us Header-->
+		<div style="background-color:white;padding:50px;">
+			<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 38px;">About Us</br></h3>
+			<p style="text-align:center;font-size:20px">Lmao! You are being pranked.</p>
+			<p style="text-align:center;font-size:20px;"><b>Some random tagline from internet</b></p>
 		</div>
-    </div>
-	<div class="col s12 m2"> </div>
+		
+		<!-- Our Mission Header-->
+		<div style="background-color:white;padding:0px;margin:0px">
+			<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 28px;">Our Mission</br></h3>
+		</div>
+		
+		<!-- Our Mission Content -->
+		<div style="background-color:white;padding:0px;margin:auto;width:50%;">
+			<p style="font-size: 18px;">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis accumsan tempor. Integer commodo sed nisl at efficitur. Aenean vitae rhoncus diam. Mauris ligula augue, eleifend in elit ut, dignissim rutrum urna. Duis ac nisi mi. Curabitur nec mi id arcu pretium faucibus nec nec purus. Sed vehicula ultrices nulla eget venenatis. Mauris augue justo, sagittis ut justo nec, consequat sagittis velit. Duis maximus felis vel urna faucibus, sed fermentum magna porttitor. Vivamus elementum, sapien sed ullamcorper consequat, ipsum mauris ultricies sem, a elementum ligula leo vitae velit. Vestibulum ut mauris interdum, malesuada mi ac, sodales metus.
+			</p>
+		</div>
 	</div>
 	
-	<!-- Second Row -->
 	
 	
+	
+	<!-- Margin before footer -->
 	<div style="margin:0px;padding:0px;heigth:100px;background-color:white;">
 		<div style="height:100px">	</div>
 	</div>
@@ -234,7 +337,17 @@
 	
 
      <!--JavaScript at end of body for optimized loading-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	
+	
+	 
+	<script >
+		$(".dropdown-trigger").dropdown();
+		
+		$(document).ready(function(){
+			$('.carousel').carousel();
+		  });
+	</script>
 
    </body>
  </html>

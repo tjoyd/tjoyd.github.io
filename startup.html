@@ -17,9 +17,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    </head>
 
-   <body >
-   
-   <!-- NAVBAR HERE -->
+   <body style="background-color:white;">
+	<div style="height:700px;background-image: url('https://i.imgur.com/tTaDLrL.jpg;margin:0px);position:absolute;top:-20px;">
+	<!-- NAVBAR HERE -->
    
     <div class="navbar-fixed">
 		<!-- Dropdown Structure -->
@@ -41,29 +41,90 @@
 		  
 		  <li><a href="#!">three</a></li>
 		</ul>
-		<nav>
-			<div class="nav-wrapper">
-				<a href="#" class="brand-logo" style="padding-left:20px;">Funda Session</a>
+		<nav id="navigation" style="background-color:#ffffff00;">
+			<div class="black-text nav-wrapper">
+				<a href="#" class="black-text brand-logo" style="padding-left:20px;">Funda Session</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="sass.html">HOME</a></li>
-					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">PROGRAMS<i class="material-icons right">arrow_drop_down</i></a></li>
-					<li><a href="collapsible.html">BLOG</a></li>
-					<li><a class="dropdown-trigger" href="#!" data-target="dropdown2">ABOUT US<i class="material-icons right">arrow_drop_down</i></a></li>
-					<li><a href="collapsible.html">CONTACT US</a></li>
+					<li><a id="menu-item1" href="sass.html">HOME</a></li>
+					<li><a id="menu-item2" href="#!" >SERVICES</a></li>
+					<li><a id="menu-item3" href="collapsible.html">BLOG</a></li>
+					<li><a id="menu-item4" class="dropdown-trigger" href="#!" data-target="dropdown2">ABOUT US<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a id="menu-item5" href="collapsible.html">CONTACT US</a></li>
 				</ul>
 			</div>
 		</nav>
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		function myFunction() {
+		  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+			document.getElementById("navigation").style.backgroundColor = "white";
+			document.getElementById("menu-item1").style.color = "black";
+			document.getElementById("menu-item2").style.color = "black";
+			document.getElementById("menu-item3").style.color = "black";
+			document.getElementById("menu-item4").style.color = "black";
+			document.getElementById("menu-item5").style.color = "black";
+			
+		  } else {
+			document.getElementById("navigation").style.backgroundColor = "#ffffff00";
+			document.getElementById("menu-item1").style.color = "white";
+			document.getElementById("menu-item2").style.color = "white";
+			document.getElementById("menu-item3").style.color = "white";
+			document.getElementById("menu-item4").style.color = "white";
+			document.getElementById("menu-item5").style.color = "white";
+			
+		  }
+		}
+	</script>
     </div>
 
-    <div style="height:600px;background-color:#00adff59;margin:0px">
+    
       <h2 style="text-align:center;margin:0px;font-weight: 700;font-size: 72px;line-height: 72px;padding-top:30px">Renting Done Right. Finally.</h2>
     </div>
 	
-	<div style="margin:0px;padding:0px;heigth:200px;background-color:lime;">
-		<div style="height:200px">
-			<h1 style="text-align:center;margin:0px"> 200 x width </h1>
+	<div style="margin:0px;padding:0px;heigth:200px;background-color:white;">
+		<div class="valign-wrapper" style="height:200px;background-color:#f4f5f7">
+			<div class="row" style="width:100%;margin:auto;">
+				<div class="col s12 m2"> </div>
+				<div class="col s12 m8"> 
+					<div class="col s12 m4"> 
+					
+					</div>
+					<div class="col s12 m8">
+						<div class="row">
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m2"> </div>
 			
 		</div>
+	</div>
 	</div>
 	
 	<div style="margin:0px;">
@@ -151,30 +212,34 @@
 	
 	<div class="row" style="width:80%;margin:auto">
 	<div class="col s12 m1"> </div>
+	
+	<!-- Card 1 here -->
 	<div class="col s12 m4">
-      <div class="card">
+      <div class="card z-depth-3">
         <div class="card-image">
           <img src="https://materializecss.com/images/sample-1.jpg">
           <span class="card-title">Card Title</span>
           
         </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
       </div>
+		<div>
+			<p> Random text here... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis accumsan tempor. Integer commodo sed nisl at efficitur. </p>
+		</div>
     </div>
 	<div class="col s12 m2"> </div>
+	
+	<!-- Card 2 -->
 	<div class="col s12 m4">
-      <div class="card">
-        <div class="card-image">
-          <img src="https://materializecss.com/images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
+		<div class="card z-depth-3">
+			<div class="card-image">
+				<img src="https://materializecss.com/images/sample-1.jpg">
+			<span class="card-title">Card Title</span>
           
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
+			</div>
+		</div>
+		<div>
+			<p> Random text here... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis accumsan tempor. Integer commodo sed nisl at efficitur. </p>
+		</div>
     </div>
 	<div class="col s12 m1"> </div>
 	</div>
@@ -183,9 +248,9 @@
 		<div style="height:100px">	</div>
 	</div>
 	
-	<div style="width:80%;position: absolute;margin-left:10%">
+	<!-- <div style="width:80%;position: absolute;margin-left:10%">
 		<hr>
-	</div>
+	</div> -->
 	
 	<!-- Featured Coureses -->
 	<!-- Header of Featured Courses -->
@@ -238,59 +303,19 @@
 		<div class="col s12 m2"> </div>
 		</div>
 	
-		<!-- Second Row -->
-		<div class="row" style="width:100%;margin:auto">
-		<div class="col s12 m2"> </div>
-		<div class="col s12 m8">
-			<!-- Row 1 COL 1 -->
-			<div class="col s12 m4">
-				<div class="card hoverable">
-					<div class="card-image">
-						<img src="https://materializecss.com/images/office.jpg">
-						<span class="card-title">Card Title</span>
-					</div>
-				</div>
-			</div>
-			
-			<!-- Row 1 COL 2 -->
-			<div class="col s12 m4">
-				<div class="card hoverable">
-					<div class="card-image">
-						<img src="https://materializecss.com/images/office.jpg">
-						<span class="card-title">Card Title</span>
-					</div>
-				</div>
-			</div>
-			
-			<!-- Row 1 COL 3 -->
-			<div class="col s12 m4">
-				<div class="card hoverable">
-					<div class="card-image">
-						<img src="https://materializecss.com/images/office.jpg">
-						<span class="card-title">Card Title</span>
-					</div>
-				</div>
-			</div>
-				
-
-		</div>
-		<div class="col s12 m2"> </div>
-		</div>
+		
 	</div>
 	
 	
 	<div style="text-align:center;">
 	<!-- About Us Header-->
-		<div style="background-color:white;padding:50px;">
-			<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 38px;">About Us</br></h3>
-			<p style="text-align:center;font-size:20px">Lmao! You are being pranked.</p>
-			<p style="text-align:center;font-size:20px;"><b>Some random tagline from internet</b></p>
+		<div style="padding:50px;padding-top:70px">
+			<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 38px;">Our Mission</br></h3>
+			
 		</div>
 		
 		<!-- Our Mission Header-->
-		<div style="background-color:white;padding:0px;margin:0px">
-			<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 28px;">Our Mission</br></h3>
-		</div>
+		
 		
 		<!-- Our Mission Content -->
 		<div style="background-color:white;padding:0px;margin:auto;width:50%;">
@@ -348,6 +373,6 @@
 			$('.carousel').carousel();
 		  });
 	</script>
-
+	
    </body>
  </html>

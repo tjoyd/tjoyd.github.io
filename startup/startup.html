@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--Import Google Icon Font-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	 
+	 <!--Import icons-->
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	 
+	 <!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- Custom style -->
+	<style>
+		body {
+		font-family: "Roboto", Arial, sans-serif;
+		}
+		
+		.service {
+		background-color:#f5f4f0;
+		border-radius:50%;
+		height:170px;
+		width:170px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		position: relative;
+		z-index: 0px;
+		
+		}
+		.number {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		z-index: 1;
+		background: #589167;
+		border: 5px solid #fff;
+		
+		}
+		.service.shead {
+		
+		}
+		.bod {
+			border: 1px solid;	
+		}
+		.card.medium {
+			height: 300px !important; 
+		}
+	
+	</style>
+	</head>
+	<body style="background-color:white;">
+	<header>
+		<div class="navbar-fixed">
+			<!-- Dropdown Structure -->
+			
+			
+			
+			<!-- For ABOUT US-->
+			<ul id="dropdown2" class="dropdown-content" style="margin:auto">
+			  <li><a href="index.html#ourmission">OUR MISSION</a></li>
+			  <li class="divider"></li>
+			  <li><a href="index.html#ourteam">OUR TEAM</a></li>
+			  
+			  <li><a href="index.html#carriers">CARRIERS</a></li>
+			</ul>
+			<nav id="navigation" style="background-color:white">
+				<div class="black-text nav-wrapper">
+					<a href="#" class="black-text brand-logo" style="padding-left:20px;"><h6><b>Funda Session</b></h6></a>
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color:black">dehaze</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a style="color:black" class="active" href="index.html">HOME</a></li>
+						<li><a style="color:black" href="services.html" >SERVICES</a></li>
+						<li><a style="color:black" href="collapsible.html">BLOG</a></li>
+						<li><a style="color:black" class="dropdown-trigger" href="#!" data-target="dropdown2">ABOUT US<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a style="color:black" href="collapsible.html">CONTACT US</a></li>
+					</ul>
+				</div>
+			</nav>
+			<ul class="sidenav" id="mobile-demo">
+				<li><a href="sass.html">Sass</a></li>
+				<li><a href="badges.html">Components</a></li>
+				<li><a href="collapsible.html">Javascript</a></li>
+				<li><a href="mobile.html">Mobile</a></li>
+			</ul>
+			
+		</div>
+	</header>
+	<main>
+	<div class="parallax-container">
+      <div class="parallax"><img src="https://materializecss.com/images/parallax1.jpg"></div>
+    </div>
+    <div class="section white">
+		<div class="row container">
+			</br>
+			<h6 style="text-align:center;"> SERVICES </h6>
+			<h2 style="text-align:center;">How It Works</h2>
+			
+		</div>
+		
+		<div class="row" style="width:100%;margin:auto">
+		<div class="col s12 m1"> </div>
+		<div class="col s12 m10">
+			<!-- Row 1 COL 1 -->
+			<div class="col s12 m4" style="padding:30px;" >
+				<div class="">
+					<div class="service" onmouseover="changeColor(this)" onmouseout="backColor(this)" >
+						<div class="number">
+							<p class="center-align" style="font-weight: 520;text-align:center;color:white">3</p>
+						</div>
+						<div style=";position:relative;width:48px;padding:56px;">
+							<i class="medium material-icons " >assignment_turned_in</i>
+						</div>
+					</div>
+					<h5 class="center-align" >Make Schedule</h5>
+					<p class="center-align" >A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				</div>
+			</div>
+			
+			<!-- Row 1 COL 2 -->
+			<div class="col s12 m4" style="padding:30px;" >
+				<div class="">
+					<div class="service" onmouseover="changeColor(this)" onmouseout="backColor(this)" >
+						<div class="number">
+							<p class="center-align" style="font-weight: 520;text-align:center;color:white">3</p>
+						</div>
+						<div style=";position:relative;width:48px;padding:56px;">
+							<i class="medium material-icons " >assignment_turned_in</i>
+						</div>
+					</div>
+					<h5 class="center-align" >Make Schedule</h5>
+					<p class="center-align" >A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				</div>
+			</div>
+			
+			<!-- Row 1 COL 3 -->
+			<div class="col s12 m4" style="padding:30px;" >
+				<div class="">
+					<div class="service"  onmouseover="changeColor(this)" onmouseout="backColor(this)" >
+						<div class="number">
+							<p class="center-align" style="font-weight: 520;text-align:center;color:white">3</p>
+						</div>
+						<div style=";position:relative;width:48px;padding:56px;">
+							<i class="medium material-icons ">assignment_turned_in</i>
+						</div>
+					</div>
+					<h5 class="center-align shead" >Make Schedule</h5>
+					<p class="center-align spara" >A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				</div>
+			</div>
+			<script>
+				function changeColor(x) {
+					x.style.backgroundColor = "#589167";
+					var c = x.children;
+					c[0].style.backgroundColor = "#f5f4f0";
+					d = c[0].children;
+					d[0].style.color = "black";
+				}
+
+				function backColor(x) {
+					x.style.backgroundColor = "#f5f4f0";
+					var c = x.children;
+					c[0].style.backgroundColor = "#589167";
+					d = c[0].children;
+					d[0].style.color = "white";
+				}
+			</script>
+		</div>
+		<div class="col s12 m1"> </div>
+		</div>
+    </div>
+    
+	<!-- ALL SERVICES -->
+	<div class="section grey">
+		
+		<!-- SERVICES HEADER -->
+		<div class="row container">
+			</br>
+			<h6 style="text-align:center;"><b> SERVICES </b></h6>
+			<h3 style="text-align:center;"><b>We Can Help You With Any Situation</b></h3>
+		</div>
+	</div>
+	<div class="section ">
+		<!-- SERVICES CARDS -->
+		<div class="container">
+			</br>
+			<h5 style="text-align:center;"> <b>COURSES </b></h5>
+		</div>
+		<div class="row">
+			<div class="col s12 m1"></div>
+			<div class="col s12 m10" >
+				<!-- Course One -->
+				<div class="col s12 m4" style="padding:30px;margin:auto;">
+					<div class="card medium hoverable">
+						<div class="card-image">
+						<img src="https://materializecss.com/images/sample-1.jpg">
+					</div>
+					<div class="card-content center-align">
+						<h5> <a class="waves-effect waves-light btn modal-trigger" href="#modal1">TADA TADA </a></h5>
+					</div>
+					
+					</div>
+				</div>
+				<!-- Modal Structure -->
+				<div id="modal1" class="modal"  style="width:80%;height:70%;">
+					<div class="modal-content"  style="width:100%;height:85%;">
+						
+						<div class="row" style="padding:20px;width:100%;height:100%;margin:0;padding:0;">
+							<div class="col s12 m5" style="height:100%;padding:0;">
+								<img class="responsive-img" src="https://materializecss.com/images/sample-1.jpg">
+							</div>
+							<div class="col s12 m1">
+								
+							</div>
+							<div class="col s12 m6">
+								<p>We at Funda Session are here to help you grow , if you choose to help yourself . We don't teach you what to think , but rather how to think by  having a one to one mentorship platform ,where we help you develop a positive growth mindset in the domain you are looking forward to by helping you reach your goals much faster and making your path to success smoother </p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="waves-effect waves-light btn">Register</a>
+						<a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+					</div>
+				</div>
+				
+				<!-- Course Two -->
+				<div class="col s12 m4" style="padding:30px;">
+					<div class="card medium hoverable">
+						<div class="card-image">
+							<img src="https://materializecss.com/images/sample-1.jpg">
+						</div>
+						<div class="card-content center-align">
+							<h5> <a class="waves-effect waves-light btn modal-trigger" href="#modal1">TADA TADA </a></h5>
+						</div>
+					</div>
+				</div>
+				<!-- Modal Structure -->
+				<div id="modal2" class="modal">
+					<div class="modal-content">
+						
+						<div class="row" style="padding:20px;">
+							<div class="col s12 m4">
+								<img class="responsive-img" src="https://cdn4.buysellads.net/uu/1/3386/1525189943-38523.png">
+							</div>
+							<div class="col s12 m1">
+								
+							</div>
+							<div class="col s12 m7">
+								<p>We at Funda Session are here to help you grow , if you choose to help yourself . We don't teach you what to think , but rather how to think by  having a one to one mentorship platform ,where we help you develop a positive growth mindset in the domain you are looking forward to by helping you reach your goals much faster and making your path to success smoother </p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="waves-effect waves-light btn">Register</a>
+						<a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+					</div>
+				</div>
+				
+				<!-- Course Three -->
+				<div class="col s12 m4" style="padding:30px;">
+					<div class="card medium hoverable">
+						<div class="card-image">
+							<img src="https://materializecss.com/images/sample-1.jpg">
+						</div>
+						<div class="card-content center-align">
+							<h5> <a class="waves-effect waves-light btn modal-trigger" href="#modal1">TADA TADA </a></h5>
+						</div>
+					</div>
+				</div>
+				<!-- Modal Structure -->
+				<div id="modal3" class="modal">
+					<div class="modal-content">
+						
+						<div class="row" style="padding:20px;">
+							<div class="col s12 m4">
+								<img src="https://cdn4.buysellads.net/uu/1/3386/1525189943-38523.png" >
+							</div>
+							<div class="col s12 m1">
+								
+							</div>
+							<div class="col s12 m7">
+								<p>We at Funda Session are here to help you grow , if you choose to help yourself . We don't teach you what to think , but rather how to think by  having a one to one mentorship platform ,where we help you develop a positive growth mindset in the domain you are looking forward to by helping you reach your goals much faster and making your path to success smoother </p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="waves-effect waves-light btn">Register</a>
+						<a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col s12 m1"></div>
+		</div>
+	
+	</div>
+	
+	
+		
+	<!-- PART 2 CARDS -->
+	<div class="section ">
+		<!-- SERVICES CARDS -->
+		<div class="container">
+			</br>
+			<h5 style="text-align:center;"> <b>COURSES </b></h5>
+		</div>
+		<div class="row">
+			<div class="col s12 m1"></div>
+			<div class="col s12 m10" >
+				<!-- Course One -->
+				<div class="col s12 m4" style="padding:30px;margin:auto;">
+					<div class="card medium hoverable">
+						<div class="card-image">
+						<img src="https://materializecss.com/images/sample-1.jpg">
+					</div>
+					<div class="card-content center-align">
+						<h5> <a class="waves-effect waves-light btn modal-trigger" href="#modal1">TADA TADA </a></h5>
+					</div>
+					
+					</div>
+				</div>
+				<!-- Modal Structure -->
+				<div id="modal1" class="modal"  style="width:80%;height:70%;">
+					<div class="modal-content"  style="width:100%;height:85%;">
+						
+						<div class="row" style="padding:20px;width:100%;height:100%;margin:0;padding:0;">
+							<div class="col s12 m5" style="height:100%;padding:0;">
+								<img class="responsive-img" src="https://materializecss.com/images/sample-1.jpg">
+							</div>
+							<div class="col s12 m1">
+								
+							</div>
+							<div class="col s12 m6">
+								<p>We at Funda Session are here to help you grow , if you choose to help yourself . We don't teach you what to think , but rather how to think by  having a one to one mentorship platform ,where we help you develop a positive growth mindset in the domain you are looking forward to by helping you reach your goals much faster and making your path to success smoother </p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="waves-effect waves-light btn">Register</a>
+						<a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+					</div>
+				</div>
+				
+				<!-- Course Two -->
+				<div class="col s12 m4" style="padding:30px;">
+					<div class="card medium hoverable">
+						<div class="card-image">
+							<img src="https://materializecss.com/images/sample-1.jpg">
+						</div>
+						<div class="card-content center-align">
+							<h5> <a class="waves-effect waves-light btn modal-trigger" href="#modal1">TADA TADA </a></h5>
+						</div>
+					</div>
+				</div>
+				<!-- Modal Structure -->
+				<div id="modal2" class="modal">
+					<div class="modal-content">
+						
+						<div class="row" style="padding:20px;">
+							<div class="col s12 m4">
+								<img class="responsive-img" src="https://cdn4.buysellads.net/uu/1/3386/1525189943-38523.png">
+							</div>
+							<div class="col s12 m1">
+								
+							</div>
+							<div class="col s12 m7">
+								<p>We at Funda Session are here to help you grow , if you choose to help yourself . We don't teach you what to think , but rather how to think by  having a one to one mentorship platform ,where we help you develop a positive growth mindset in the domain you are looking forward to by helping you reach your goals much faster and making your path to success smoother </p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="waves-effect waves-light btn">Register</a>
+						<a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m1"></div>
+		 </div>
+	
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	</main>
+	<!-- Margin before footer -->
+		<div class="grey" style="margin:0px;padding:0px;heigth:100px;">
+			<div style="height:100px">	</div>
+		</div>
+	<footer class="page-footer" style="background-color:#2e2d36">
+	
+		
+        <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul >
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+            </div>
+        </div>
+    </footer>
+	
+	
+	<!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	
+	
+	 
+	<script >
+		<!-- Parallel moving -->
+		 $(document).ready(function(){
+			$('.parallax').parallax();
+		  });
+  
+		<!-- Modal Trigger -->
+		$(document).ready(function(){
+			$('.modal').modal();
+		  });
+  
+  
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
+		});
+  
+		$(".dropdown-trigger").dropdown();
+		
+		$(document).ready(function(){
+			$('.carousel').carousel();
+		  });
+	</script>
+	</body>
+</html>
+   

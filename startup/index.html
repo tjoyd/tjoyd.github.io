@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	 
+	 <!--Import icons-->
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	 
+	 <!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<style>
+		body {
+			font-family: proxima-nova,sans-serif;
+		}
+		.vcenter {
+			margin: 0;
+			position: relative;
+			top: 45%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+		@media screen and (min-width: 760px) {
+			.homeMain {
+				height:680px;
+			}
+			.rentSafePara {
+				font-size: 20px;
+				line-height: 28px;
+			}
+			
+		}
+		@media screen and (max-width: 760px) {
+			.homeMain {
+				height:330px;
+			}
+			.rentSafe {
+				font-size: 20px;
+				line-height: 28px;
+				font-weight: 700;
+				padding:30px;
+				margin:0px;
+			}
+			.rentSafePara {
+				font-size: 16px;
+				line-height: 22px;
+				padding:20px;
+			}
+		}
+	</style>
+	
+	
+	</head>
+
+   <body style="background-color:white;">
+	<div class="homeMain" style="background-image: url('background.jpg');background-repeat: no-repeat;background-size: 100% auto;background-color:#f4f5f7;margin:0px;">
+	<!-- NAVBAR HERE -->
+   
+    <div class="navbar-fixed">
+		<!-- Dropdown Structure -->
+		
+		<!-- For PROGRAMS-->
+		<ul id="dropdown1" class="dropdown-content">
+		  <li><a href="#!">one</a></li>
+		  <li class="divider"></li>
+		  <li><a href="#!">two</a></li>
+		  
+		  <li><a href="#!">three</a></li>
+		</ul>
+		
+			<!-- For ABOUT US-->
+			<ul id="dropdown2" class="dropdown-content" style="margin:auto">
+			  <li><a href="index.html#ourmission">OUR MISSION</a></li>
+			  <li class="divider"></li>
+			  <li><a href="index.html#ourteam">OUR TEAM</a></li>
+			  
+			  <li><a href="index.html#carriers">CARRIERS</a></li>
+			</ul>
+			<nav id="navigation" style="background-color:#ffffff00">
+				<div class="black-text nav-wrapper">
+					<a href="#" class="black-text brand-logo" style="padding-left:20px;padding-top:10px"><h6><b>Funda Session</b></h6></a>
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color:black">dehaze</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a id="menu-item1" style="color:black" class="active" href="index.html">HOME</a></li>
+						<li><a id="menu-item2" style="color:black" href="services.html" >SERVICES</a></li>
+						<li><a id="menu-item3" style="color:black" href="collapsible.html">BLOG</a></li>
+						<li><a id="menu-item4" style="color:black" class="dropdown-trigger" href="#!" data-target="dropdown2">ABOUT US<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a id="menu-item5" style="color:black" href="collapsible.html">CONTACT US</a></li>
+					</ul>
+				</div>
+			</nav>
+			<ul class="sidenav" id="mobile-demo">
+				<li><a href="sass.html">Sass</a></li>
+				<li><a href="badges.html">Components</a></li>
+				<li><a href="collapsible.html">Javascript</a></li>
+				<li><a href="mobile.html">Mobile</a></li>
+			</ul>
+		
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		function myFunction() {
+		  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+			document.getElementById("navigation").style.backgroundColor = "white";
+			document.getElementById("menu-item1").style.color = "black";
+			document.getElementById("menu-item2").style.color = "black";
+			document.getElementById("menu-item3").style.color = "black";
+			document.getElementById("menu-item4").style.color = "black";
+			document.getElementById("menu-item5").style.color = "black";
+			
+		  } else {
+			document.getElementById("navigation").style.backgroundColor = "#ffffff00";
+			document.getElementById("menu-item1").style.color = "#39a6ab";
+			document.getElementById("menu-item2").style.color = "#39a6ab";
+			document.getElementById("menu-item3").style.color = "#39a6ab";
+			document.getElementById("menu-item4").style.color = "#39a6ab";
+			document.getElementById("menu-item5").style.color = "#39a6ab";
+			
+		  }
+		}
+	</script>
+    </div>
+    <div class="section">
+		<div class="vcenter" style="width:50%">
+			<h3 style="text-align:center;margin:0px;font-weight: 650;line-height: 72px;color:black;margin:auto;">The Only F Authentic</h3>
+		</div>
+    </div>
+	</div>
+	<div style="margin:0px;padding:0px;heigth:200px;background-color:white;">
+		<div class="valign-wrapper" style="height:200px;background-color:#f4f5f7">
+			<div class="row" style="width:100%;margin:auto;">
+				<div class="col s12 m2"> </div>
+				<div class="col s12 m8"> 
+					<div class="col s12 m4"> 
+					
+					</div>
+					<div class="col s12 m8 hide-on-small-only">
+						<div class="row">
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+							<div class="col s12 m3"> 
+							<h5 style="font-weight: 700" >Forbes</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m2"> </div>
+			
+		</div>
+	</div>
+	</div>
+	
+	<div style="margin:0px;">
+	<div class="row" style="padding: 50px 0;background-color:white;margin:0px;">
+		<div class="col s12 m1"></div>
+		<div class="col s12 m5">
+			<img style="padding: 0 20px;" alt="" src="https://cdn.rentberry.com/static/rentberry/browser/assets/images/covid/covid.svg?v=1591025281440">
+			<h3 class="rentSafe" >Rent Safe </br>During <span style="color:#7b53c1">COVID-19</span></h3>
+		</div>
+		<div class="col s12 m5" style="font-family: proxima-nova,sans-serif;">
+			<h5 class="rentSafePara" style="text-align:left" >Rentberry is the first platform that offers a fully digital rental experience. It automates all the standard rental tasks from submission of personal information, credit reports and custom offers to scheduling tours, eSigning rental agreements and sending maintenance requests. Not only Rentberry can save valuable time but it also helps save lives.</h5>
+		</div>
+		<div class="col s12 m1"></div>
+    
+	</div>
+	<div style="width:80%;position: absolute;margin-left:10%">
+		<hr>
+	</div>
+	
+	<div style="text-align:center;background-color:white;padding:50px;padding-bottom:0px;margin-bottom:0px">
+		<h3 class="rentSafe" style="padding:0px;" >Perform All Tasks Online to</br> <span style="color:#7b53c1">Minimize Direct Contact</span></h3>
+		
+	</div>
+	</div>
+	
+	
+	<!-- 3 CAROUSEL CARD -->
+	<div class="carousel" style="height:530px;margin:0px;padding:0px;top:-80px;" >
+	
+		<a class="carousel-item" style="width:400px;margin-top:0px;padding:20px" href="#one!"><img class="z-depth-3" style="margin:0px;padding:0px;" src="https://cdn.rentberry.com/static/rentberry/browser/assets/images/promo/custom-offer1.webp?v=1592385900927"></a>
+		<a class="carousel-item" style="width:400px;margin-top:0px;padding:20px" href="#two!"><img class="z-depth-3" style="margin:0px;padding:0px;" src="https://cdn.rentberry.com/static/rentberry/browser/assets/images/promo/custom-offer3.webp?v=1592385900927"></a>
+		<a class="carousel-item" style="width:400px;margin-top:0px;padding:20px" href="#three!"><img class="z-depth-3" style="margin:0px;padding:0px;" src="https://cdn.rentberry.com/static/rentberry/browser/assets/images/promo/custom-offer4.webp?v=1592385900927"></a>
+	
+	</div>
+	
+	<!-- EXTRA PARAGRAPH -->
+	</br>
+	</br>
+	<div class="row">
+		<div class="col s1"></div>
+		<div class="col s10">
+			<p class="rentSafePara" style="text-align:center">See the current highest proposal and the number of people who applied for the property, so you can make an informed decision and negotiate the price. All this now can be done online with Rentberry.</p>
+		</div>
+	</div>
+	</br>
+	</br>
+	
+	<!-- CARDS HERE || FOR 2 CARDS - PRIVATE OR MASS -->
+	
+	<div class="row" style="width:80%;margin:auto">
+	<div class="col s12 m1"> </div>
+	
+	<!-- Card 1 here -->
+	<div class="col s12 m4">
+      <div class="card z-depth-4">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          
+        </div>
+      </div>
+		<div>
+			<p class="rentSafePara" > Random text here... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis accumsan tempor. Integer commodo sed nisl at efficitur. </p>
+		</div>
+    </div>
+	<div class="col s12 m2"> </div>
+	
+	<!-- Card 2 -->
+	<div class="col s12 m4">
+		<div class="card z-depth-4">
+			<div class="card-image">
+				<img src="https://materializecss.com/images/sample-1.jpg">
+			<span class="card-title">Card Title</span>
+          
+			</div>
+		</div>
+		<div>
+			<p class="rentSafePara"> Random text here... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis accumsan tempor. Integer commodo sed nisl at efficitur. </p>
+		</div>
+    </div>
+	<div class="col s12 m1"> </div>
+	</div>
+	
+	<div style="margin:0px;padding:0px;heigth:100px;background-color:white;">
+		<div style="height:100px">	</div>
+	</div>
+	
+	<!-- <div style="width:80%;position: absolute;margin-left:10%">
+		<hr>
+	</div> -->
+	
+	<!-- Featured Coureses -->
+	<!-- Header of Featured Courses -->
+	<div style="text-align:center;background-color:white;padding:50px;">
+		<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 48px;">Featured Courses</br></h3>
+		<p style="text-align:center;font-size:20px">Lmao! You are being pranked.</p>
+		
+	</div>
+	
+	
+	<!-- Content of Featured Courses with cards -->
+	
+	<div>
+		<!-- First Row -->
+		<div class="row" style="width:100%;margin:auto">
+		<div class="col s12 m2"> </div>
+		<div class="col s12 m8">
+			<!-- Row 1 COL 1 -->
+			<div class="col s12 m4">
+				<div class="card hoverable">
+					<div class="card-image">
+						<img src="https://materializecss.com/images/office.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Row 1 COL 2 -->
+			<div class="col s12 m4">
+				<div class="card hoverable">
+					<div class="card-image">
+						<img src="https://materializecss.com/images/office.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Row 1 COL 3 -->
+			<div class="col s12 m4">
+				<div class="card hoverable">
+					<div class="card-image">
+						<img src="https://materializecss.com/images/office.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+				</div>
+			</div>
+				
+
+		</div>
+		<div class="col s12 m2"> </div>
+		</div>
+	
+		
+	</div>
+	
+	
+	<div style="text-align:left;background-color:#f99770">
+	<!-- About Us Header-->
+	<div class="row" style="margin-bottom:0px;">
+	<div class="col s1 m2"></div>
+	<div class="col s10 m8">
+		<!-- Our Mission Header-->
+		<div id="ourmission" style="padding-top:70px">
+			<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 38px;">Our Mission</br></h3>
+		</div>
+
+		<!-- Our Mission Content -->
+		<div style="padding:0px;margin:auto;">
+			<p class="rentSafePara" style="font-size: 18px;">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis accumsan tempor. Integer commodo sed nisl at efficitur. Aenean vitae rhoncus diam. Mauris ligula augue, eleifend in elit ut, dignissim rutrum urna. Duis ac nisi mi. Curabitur nec mi id arcu pretium faucibus nec nec purus. Sed vehicula ultrices nulla eget venenatis. Mauris augue justo, sagittis ut justo nec, consequat sagittis velit. Duis maximus felis vel urna faucibus, sed fermentum magna porttitor. Vivamus elementum, sapien sed ullamcorper consequat, ipsum mauris ultricies sem, a elementum ligula leo vitae velit. Vestibulum ut mauris interdum, malesuada mi ac, sodales metus.
+			</p>
+		</div>
+		
+		<!-- Our TEAM Header-->
+		<div id="ourteam" style="padding-top:70px">
+			<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 38px;">Our Team</br></h3>
+		</div>
+
+		<!-- Our TEAM Content -->
+		<div style="padding:0px;margin:auto;">
+			<p class="rentSafePara" style="font-size: 18px;">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis accumsan tempor. Integer commodo sed nisl at efficitur. Aenean vitae rhoncus diam. Mauris ligula augue, eleifend in elit ut, dignissim rutrum urna. Duis ac nisi mi. Curabitur nec mi id arcu pretium faucibus nec nec purus. Sed vehicula ultrices nulla eget venenatis. Mauris augue justo, sagittis ut justo nec, consequat sagittis velit. Duis maximus felis vel urna faucibus, sed fermentum magna porttitor. Vivamus elementum, sapien sed ullamcorper consequat, ipsum mauris ultricies sem, a elementum ligula leo vitae velit. Vestibulum ut mauris interdum, malesuada mi ac, sodales metus.
+			</p>
+		</div>
+		
+		<!-- CARRIERS Header-->
+		<div id="carriers" style="padding-top:70px">
+			<h3 style="margin:0px;font-weight: 700;font-family: proxima-nova,sans-serif;font-size: 38px;">CARRIERS</br></h3>
+		</div>
+
+		<!-- CARRIERS Content -->
+		<div style="padding:0px;margin:auto;">
+			<p class="rentSafePara" style="font-size: 18px;">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis accumsan tempor. Integer commodo sed nisl at efficitur. Aenean vitae rhoncus diam. Mauris ligula augue, eleifend in elit ut, dignissim rutrum urna. Duis ac nisi mi. Curabitur nec mi id arcu pretium faucibus nec nec purus. Sed vehicula ultrices nulla eget venenatis. Mauris augue justo, sagittis ut justo nec, consequat sagittis velit. Duis maximus felis vel urna faucibus, sed fermentum magna porttitor. Vivamus elementum, sapien sed ullamcorper consequat, ipsum mauris ultricies sem, a elementum ligula leo vitae velit. Vestibulum ut mauris interdum, malesuada mi ac, sodales metus.
+			</p>
+		</div>
+		
+	</div>
+	</div>
+	</div>
+	
+	
+	
+	
+	<!-- Margin before footer -->
+	<div style="margin:0px;padding:0px;heigth:100px;background-color:#f99770;">
+		<div style="height:100px">	</div>
+	</div>
+	
+	<!-- Footer -->
+	<footer class="page-footer" style="background-color:#2e2d36">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul >
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li style="padding:5px;"><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+            </div>
+          </div>
+        </footer>
+	
+
+     <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	
+	
+	 
+	<script >
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
+		});
+		
+		$(".dropdown-trigger").dropdown();
+		
+		$(document).ready(function(){
+			$('.carousel').carousel();
+		  });
+	</script>
+	
+   </body>
+ </html>

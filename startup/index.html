@@ -68,42 +68,38 @@
 		<!-- Dropdown Structure -->
 		
 		<!-- For PROGRAMS-->
-		<ul id="dropdown1" class="dropdown-content">
-		  <li><a href="#!">one</a></li>
-		  <li class="divider"></li>
-		  <li><a href="#!">two</a></li>
-		  
-		  <li><a href="#!">three</a></li>
-		</ul>
 		
-			<!-- For ABOUT US-->
-			<ul id="dropdown2" class="dropdown-content" style="margin:auto">
-			  <li><a href="index.html#ourmission">OUR MISSION</a></li>
-			  <li class="divider"></li>
-			  <li><a href="index.html#ourteam">OUR TEAM</a></li>
+		
+		<!-- For ABOUT US-->
+		<ul id="dropdown2" class="dropdown-content" style="margin:auto">
+			<li><a href="index.html#ourmission">OUR MISSION</a></li>
+			<li class="divider"></li>
+			<li><a href="index.html#ourteam">OUR TEAM</a></li>
 			  
-			  <li><a href="index.html#carriers">CARRIERS</a></li>
-			</ul>
-			<nav id="navigation" style="background-color:#ffffff00">
-				<div class="black-text nav-wrapper">
-					<a href="#" class="black-text brand-logo" style="padding-left:20px;padding-top:10px"><h6><b>Funda Session</b></h6></a>
-					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color:black">dehaze</i></a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a id="menu-item1" style="color:black" class="active" href="index.html">HOME</a></li>
-						<li><a id="menu-item2" style="color:black" href="services.html" >SERVICES</a></li>
-						<li><a id="menu-item3" style="color:black" href="collapsible.html">BLOG</a></li>
-						<li><a id="menu-item4" style="color:black" class="dropdown-trigger" href="#!" data-target="dropdown2">ABOUT US<i class="material-icons right">arrow_drop_down</i></a></li>
-						<li><a id="menu-item5" style="color:black" href="collapsible.html">CONTACT US</a></li>
-					</ul>
-				</div>
-			</nav>
+			<li><a href="index.html#carriers">CARRIERS</a></li>
+		</ul>
+		<nav id="navigation" style="background-color:#ffffff00">
+			<div class="nav-wrapper">
+				<a href="#" class="black-text brand-logo" style="padding-left:20px;padding-top:10px"><h6><b>Funda Session</b></h6></a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color:black">dehaze</i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a id="menu-item1" style="color:black" class="active" href="index.html">HOME</a></li>
+					<li><a id="menu-item2" style="color:black" href="services.html" >SERVICES</a></li>
+					<li><a id="menu-item3" style="color:black" href="collapsible.html">BLOG</a></li>
+					<li><a id="menu-item4" style="color:black" class="dropdown-trigger" href="#!" data-target="dropdown2">ABOUT US<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a id="menu-item5" style="color:black" href="collapsible.html">CONTACT US</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 			<ul class="sidenav" id="mobile-demo">
-				<li><a href="sass.html">Sass</a></li>
-				<li><a href="badges.html">Components</a></li>
-				<li><a href="collapsible.html">Javascript</a></li>
-				<li><a href="mobile.html">Mobile</a></li>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="services.html" >SERVICES</a></li>
+				<li><a href="collapsible.html">BLOG</a></li>
+				<li><a href="#!" >ABOUT US<i class="material-icons right">arrow_drop_down</i></a></li>
+				<li><a href="collapsible.html">CONTACT US</a></li>
 			</ul>
-		
+	
 		<script>
 		window.onscroll = function() {myFunction()};
 
@@ -127,7 +123,7 @@
 		  }
 		}
 	</script>
-    </div>
+    
     <!--
 	<div class="section">
 		<div class="vcenter" style="width:50%">
@@ -426,7 +422,7 @@ Come join us to make the most of this time and acquire new skills which not only
 	<script >
 		$(document).ready(function(){
 			$('.sidenav').sidenav();
-		});
+		 });
 		
 		$(".dropdown-trigger").dropdown();
 		

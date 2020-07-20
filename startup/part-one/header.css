@@ -1,0 +1,8 @@
+#nav-mobile{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+.navbar-fixed{
+    overflow: hidden;
+}

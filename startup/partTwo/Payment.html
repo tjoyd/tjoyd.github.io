@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  
+  
+</head>
+<body>
+ <div class="container"> <h2>Registration Page</h2> <p>Please fill in the details needed and then click on 'Pay' button to pay securely.</p><p><small>Please note that all fields are mandatory</small></p><form action="" class="needs-validation" id="regForm" novalidate> <div class="form-group"> <label for="Name">Name:</label> <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required> <div class="valid-feedback">Ok.</div><div class="invalid-feedback">Please fill out this field.</div></div><div class="form-group"> <label for="eml">E-mail Address:</label> <input type="email" class="form-control" id="eml" placeholder="Enter E-mail" name="eml" required> <div class="valid-feedback">Ok.</div><div class="invalid-feedback">Please fill out this field.</div></div><div class="form-group"> <label for="phn">Phone Number:</label> <input type="text" class="form-control" id="phn" placeholder="Enter Your Phone Number" name="phn" required> <div class="valid-feedback">Ok.</div><div class="invalid-feedback">Please fill out this field.</div></div><div class="form-group"> <label for="loc">Current Location:</label> <input type="text" class="form-control" id="loc" placeholder="Enter Your Current Location" name="loc" required> <div class="valid-feedback">Ok.</div><div class="invalid-feedback">Please fill out this field.</div></div><div class="form-group"> <label for="shcl">School/College:</label> <input type="text" class="form-control" id="shcl" placeholder="Enter School/College Name" name="shcl" required> <div class="valid-feedback">Ok.</div><div class="invalid-feedback">Please fill out this field.</div></div><div class="form-group"> <label for="clssyr">Class/Year of Study:</label> <input type="text" class="form-control" id="clssyr" placeholder="Enter Class/Year of Study" name="clssyr" required> <div class="valid-feedback">Ok.</div><div class="invalid-feedback">Please fill out this field.</div></div><button type="reset" class="btn btn-primary">Reset</button> <button type="submit" class="btn btn-success">Proceed to Secure Payment</button> </form> <div class="modal fade" id="myModal" role="dialog"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal">&times;</button> <h4 class="modal-title"></h4> </div><div class="modal-body"> <p id="error"></p><p id="success"><span id="gentext"></span><span id="tranid" style="" ></span></p><p id="noteid"></p></div><div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </div></div></div></div>
+ </div>
+
+<script>
+
+/* PLEASE PUT YOUR PAYMENT SECRETS HERE */
+
+/*Payment Public Key*/
+var keyCustom= 'rzp_test_GkRuTpPJwzuZKb'; /*rzp_live_yNnzSMBo7OM7Fq*/
+
+/*Amount Payable (in Paisa, eg, 2 rupee and 40 paisa would be 240)*/
+var amountCustom= 100; /*in paisa*/
+
+/*Merchant Name*/
+var merchantNameCustom= "Merchant"; 
+
+/*Description*/
+var descriptionCustom= "The short description"; 
+ 
+ /*Logo for left top image*/
+var imageCustom= "https://picsum.photos/id/237/200/300";   /* Your logo url */     
+      
+
+/*  END SECRETS   */
+
+
+$("#myModal").modal({show:!1});(function(){window.addEventListener("load",function(){var c=document.getElementsByClassName("needs-validation");Array.prototype.filter.call(c,function(b){b.addEventListener("submit",function(a){!1===b.checkValidity()?(a.preventDefault(),a.stopPropagation()):(a.preventDefault(),a.stopPropagation(),callRazorPayScript());b.classList.add("was-validated")},!1)})},!1)})();
+var loadExternalScript=function(c){var b=$.Deferred(),a=document.createElement("script");a.async="async";a.type="text/javascript";a.src=c;a.onload=a.onreadystatechange=function(e,d){if(!a.readyState||/loaded|complete/.test(a.readyState))d?b.reject():b.resolve()};a.onerror=function(){b.reject()};$("head")[0].appendChild(a);return b.promise()},callRazorPayScript=function(){loadExternalScript("https://checkout.razorpay.com/v1/checkout.js").then(function(){var c={key:keyCustom,protocol:"https",hostname:"api.razorpay.com",
+amount:amountCustom,name:merchantNameCustom,description:descriptionCustom,image:imageCustom,prefill:{name:$("#name").val().trim(),email:$("#eml").val().trim(),contact:$("#phn").val().trim()},theme:{color:"#b9a76e"},handler:function(b,a){var h=b.razorpay_payment_id;$("#regForm").trigger("reset");$(".modal-title").text("Your Payment request is received successfully!");$("#gentext").html("Your transaction id is : ");$("#tranid").html("<b>"+h+"</b>");$("#noteid").text("Please keep this transaction id for any future reference");$("#myModal").modal("show")}};
+window.rzpay=new Razorpay(c);rzpay.open()})};
+ 
+  
+  
+</script>
+
+</body>
+</html>

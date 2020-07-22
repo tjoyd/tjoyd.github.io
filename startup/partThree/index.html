@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	 
+	 <!--Import icons-->
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	 <link rel="stylesheet" href="header.css">
+	 <!-- jquery -->
+	<script src="jquery.min.js"></script>
+	<script src="jquery.hover3d.js"></script>
+	<style>
+		html{
+			scroll-behavior: smooth;
+		}
+		body {
+			font-family: proxima-nova,sans-serif;
+			
+			
+		}
+		body *{
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+			font-family: font;
+		}
+		a{
+			color: black;
+		}
+		@font-face {
+			font-family: font;
+			src: url(font.ttf);
+		}
+		@font-face {
+			font-family: adam;
+			src: url(ADAM.CG\ PRO.otf);
+		}
+		@font-face {
+			font-family: anson;
+			src: url(anson-regular-webfont.ttf);
+		}
+		@font-face {
+			font-family: komoda;
+			src: url(Komoda.otf);
+		}
+		@font-face {
+			font-family: goth;
+			src: url(league-gothic-master/LeagueGothic-CondensedRegular.otf);
+		}
+		.navbar-fixed{
+			background-color: rgba(255, 255, 255, 1);
+			font-weight: 700;
+			position: fixed;
+			top: 0px;
+			width: 100%;
+			z-index: 1000;
+			transition: none;
+		}
+		.navbar-fixed *{
+			transition: none;
+		}
+
+		.hovercont{
+			width: 100%;
+			min-height: 70vh;
+			height: fit-content;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 0px;
+		}
+		.car-cont{
+			width:fit-content;
+			height:fit-content;
+		}
+		.screen{
+			height: max-content;
+			max-height: 1000px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-size: 1.1em;
+			margin-top: 30px;
+			padding-bottom: 40px;
+			flex-flow: column nowrap;
+		}
+		.screen:nth-child(2){
+			flex-flow: row;
+		}
+		#ourteam{
+			height: 600px;
+		}
+		
+		.writingspace{
+			display: flex;
+			width: 90%;
+			max-width: 1200px;
+			height:40%;
+			padding: 0px;
+			justify-content: center;
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+		}
+		.writingspace *{
+			transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+		}
+		.writeups{
+			display: flex;
+			flex-flow: column;
+			position: absolute;
+			opacity: 0;
+			width: 70%;
+			height: 20%;
+			font-size: large;
+			justify-content: space-around;
+			align-items: center;
+		}
+		
+		.facesCont{
+			display: flex;
+			width: 100%;
+			height:30%;
+			justify-content: center;
+			align-items: center;
+		}
+		.face{
+			width: 50px;
+			
+			height: 50px;
+			background-color: grey;
+			margin: 10px;
+			opacity: 0.5;
+			border-radius: 50px;
+			box-shadow: 0px 0px 3px 1px black;
+			transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+		}
+		.stitle{
+			font-size: 2em;
+			width: 70%;
+			margin-bottom: 30px;
+			text-decoration: underline;
+			display: flex;
+			justify-content: center;
+			
+		}
+		.scont{
+			font-size: 1.3em;
+			width: 70%;
+			max-width: 1200px;
+			opacity: 0;
+		}
+		
+<!-- 
+
+		.hovers{
+			width: 32vw;
+			height: 25vw;
+			min-height: 200px;
+			min-width: 200px;	
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.8em;
+			color: white;
+
+			align-items: center;
+		}
+		.hovers a{
+			height: 80%;
+			width: 80%;
+			background-image: url(test.jpg);
+			background-position: center;
+			background-size: cover;
+			background-color: #7b53c1;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.vcenter {
+			margin: 0;
+			position: relative;
+			top: 45%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+		.row1{
+			display: flex;
+			height: 100%;
+			min-width: 100%;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			align-items: flex-start;
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+		}
+		.imgcont {
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+			transform: translateY(150px);
+			opacity: 0;
+			box-shadow: 0px 0px 10px 0px rgb(110, 110, 110);
+		}
+		.wrapper{
+			display: flex;
+			flex-flow: column;
+			max-width: 400px;
+			align-items: center;
+		}
+		.hover-in{
+			transition: .3s ease-out;
+		}
+		.hover-out{
+			transition: .3s ease-in;
+		}
+		.logoCont{
+			padding:60px;
+			display:flex; 
+			flex-flow:row; 
+			justify-content:space-between;
+			background-color:rgba(211, 211, 211, 0.274)
+		}
+		.imgcont{
+			width: 380px;
+			height: 260px;
+			border-radius: 10px;
+			border: lightgray 1px solid;
+			box-shadow: 0px 10px 30px 0px rgb(158, 158, 158);
+			background-image: url(15766.jpg);
+			background-size: cover;
+			background-position: center;
+			margin-bottom: 20px;
+		}
+		.carousel{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 400px;
+			width: 100%;
+			opacity: 0;
+			
+
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+		}
+		
+		.car-cont{
+			display: flex;
+			width:fit-content;
+			justify-content: center;
+			align-items: center;
+		}
+		video{
+			border-radius: 10px;
+			box-shadow: 0px 0px 20px 0px #302d1498;
+		}
+		.carEl{
+			width: 340px;
+			height: 320px;
+			max-width: 340px;
+			max-height: 320px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 20px 3px lightgray;
+			background-size: cover;
+			background-position: center;
+			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+		}
+		#car1{
+			background-image: url(jpg3.jpg);
+			transform: translateX(100%);
+			
+		}
+		#car2{
+			background-image: url(jpg1.jpg);
+			z-index: 100;		
+		}
+		#car3{
+			background-image: url(jpg2.jpg);
+			transform: translateX(-100%);
+		
+		}
+		#car1,#car3{
+			width: 280px;
+			height: 210px;
+		}
+		.brand-logo{
+			background-image: url(logo.jpg);
+			background-position: center;
+			background-size: cover;
+		}
+		#imgcont1{
+			background-image: url(left.jpg);
+		}
+		
+		.imgcont, .textcont{
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+			font-size: 1.4em;
+		}
+		.tcard{
+			width: 240px;
+			margin: 30px 50px;
+			border-radius: 6px;
+			height: 320px;
+			border: 3px solid rgba(211, 211, 211, 0.5);
+			overflow: hidden;
+		}
+		.tcard:hover{
+			transform: scale(1.05);
+			border: 1px solid rgba(211, 211, 211, 0.404);
+			box-shadow: -2px 2px 20px 0px lightgray;
+			padding-bottom: 20px;
+		}
+		.tscr1,.tscr2{
+			width: 240px;
+			height: 320px;
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			align-items: center;
+			justify-content: center;
+			flex-flow: column;
+		}
+		.tscr2{
+			opacity: 0;
+		}
+		.tface{
+			background-color: #e9d6002c;
+			width: 90px;
+			height: 90px;
+			border-radius: 50px;
+			margin-bottom: 30px;
+			z-index: 1000;
+		}
+		.tname{
+			font-size: 1.5em;
+			z-index: -1;
+
+		}
+		
+		.textcont{
+			width: 400px;
+			text-align: left;
+			margin: 80px;
+		
+		}
+		.imgcont,.para{
+			opacity: 0;
+		}
+		.homeMain{
+			opacity: 0.5;
+		}
+		.card-cont{
+			display: flex;
+			flex-flow: column;
+			height: min-content;
+			align-items: center;
+			padding-bottom: 40px;
+		}
+		.card-cont div{
+			display: flex;
+			flex-flow: row nowrap;
+			padding: 30px;
+			width: fit-content;
+			
+		}
+		.hcard{
+			min-width: 310px;
+			height: 200px;
+			margin: 10px;
+			border-radius: 10px;
+			box-sizing: border-box;
+			background-image: url(test.jpg);
+			background-position: center;
+			background-size: cover;
+			transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+			opacity: 0;
+		}
+		.hcard:hover{
+			transform: scale(1.05);
+		}
+		.hcard:nth-child(2){
+			transform: translateX(-330px);
+		}
+		.hcard:nth-child(3){
+			transform: translateX(-660px);
+		}
+		.logo{
+			font-weight: 700;
+			opacity: 0.6;
+			transition: 0.5s ease;
+			padding:10px;
+			width:235px;
+			height: 60px;
+			text-align:center;
+			font-size:1.3em;
+			font-family: adam;
+		}
+		.logo:hover{
+			opacity: 1;
+			color: #e9d500;
+			text-shadow: 0px 0px 4px #ffea0054;
+		}
+		.logos{
+			width:100%;
+			display:flex;
+			flex-flow:row;
+			justify-content:flex-end;
+			align-items:center
+		}
+
+		#personal,#coll,#mission,#teaam,#career,#tteam{
+			border-right: 2px solid black;
+			width: fit-content;
+			align-self: center;
+			animation: blink-caret .75s step-end infinite;
+			opacity: 1;
+		}
+
+		
+		  
+		  /* The typewriter cursor effect */
+		  @keyframes blink-caret {
+			from, to { border-color: transparent }
+			50% { border-color: black; }
+		  }
+		
+
+		@media screen and (min-width: 760px) {
+			.homeMain {
+				height:680px;
+			}
+			.rentSafePara {
+				font-size: 20px;
+				line-height: 28px;
+			}
+			
+		}
+		@media screen and (max-width: 760px) {
+			.homeMain {
+				height:330px;
+			}
+			.rentSafe {
+				font-size: 20px;
+				line-height: 28px;
+				font-weight: 700;
+				padding:30px;
+				margin:0px;
+			}
+			.rentSafePara {
+				font-size: 16px;
+				line-height: 22px;
+				padding:20px;
+			}
+			.logoo{
+				display:flex;
+				flex-flow:column;
+				width:100%;
+				height:100%;
+				align-items:baseline;
+			}
+		}
+		.row{
+			max-width: 1300px;
+			display: flex;
+			justify-content: center;
+		}
+		#careers{
+			padding-bottom: 100px ;
+		}
+		.links, .dlinks{
+			color: black;
+			background-color: white;
+		}
+		#nav11 *{
+			display: flex;
+			color: black;
+		}
+		
+		.homeMain{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+		}
+	</style>
+	
+	
+	</head>
+
+   <body onload="get1();get4();get41();get51();get42();get();ourteam1();">
+	   <div style="background-color: black;height:fit-content">
+			<div class="homeMain" style="background-image: url('https://tjoyd.github.io/3942046.jpg');background-repeat: no-repeat;background-size: 100% auto;background-color:#f4f5f7;margin:0px;">
+				<h2 style="margin-right:200px">Carving your</h2>
+				<h2 style="margin-left:200px">Palm lines.</h2>
+				
+			</div>
+	<!-- NAVBAR HERE -->
+   
+    <div class="navbar-fixed">
+		<!-- Dropdown Structure -->
+		
+		<!-- For PROGRAMS-->
+		
+		
+		<!-- For ABOUT US-->
+		
+		<div id="nav11">
+			<div id="logo"></div>
+			<div class="menu">
+				<a href="index.html" class="links">HOME</a>
+				<a href="services.html" class="links">SERVICES</a>
+				<a href="blogPage.html" class="links">BLOG</a>
+				<div id="linkcont" style="display:flex;width:fit-content;height:30px;flex-flow:column;padding:10px;overflow:hidden">
+					<a class="dlinks" id="expand" onclick="expand()">ABOUT US  &#9660;
+
+					</a>
+					<a href="index.html#ourmission" class="dlinks">OUR MISSION</a>
+					<a href=" index.html#ourteam" class="dlinks">OUR TEAM</a>
+					<a href="index.html#career" class="dlinks">CAREERS</a>
+				</div>
+				<a class="links">CONTACT US</a>
+
+			</div>
+		</div>
+	</div>
+	<ul class="sidenav" id="mobile-demo">
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="services.html" >SERVICES</a></li>
+		<li><a href="blogPage.html">BLOG</a></li>
+		<li><a href="#ourmission">OUR MISSION</a></li>
+		<li><a href="index.html#ourteam">OUR TEAM</a></li>
+		<li><a href="index#careers">CAREERS</a></li>
+		<li><a href="collapsible.html">CONTACT US</a></li>
+	</ul>
+	
+    
+	</div>
+	
+	<div class="logoCont" style="padding:60px;display:flex; flex-flow:row; justify-content:center;background-color:rgba(211, 211, 211, 0.274)">
+		<div style="height: 100%;width:fit-content;display:flex;flex-flow:row">
+			<div>
+				<video width="220px" height="122px" style="margin-right: 90px;" controls>
+				</video>
+			</div>
+			<div class="logoo" style="display:flex;flex-flow:column;width:fit-content;height:100%;align-items:baseline">
+				<div class="logos">
+					<a class="logo" >INTER-PERSONAL</a>
+					<div class="logo" >INTRAPERSONAL</div>
+					<div class="logo" >DAY TO DAY FINANCE</div>
+				</div>
+				<div class="logos">
+					<div class="logo" >TECHNOLOGY UPRISING</div>
+					<div class="logo" >EXISTENTIAL</div>
+					<div class="logo" >CAREER PATH</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div  style="display:flex;justify-content:center;flex-flow:column;margin:0px;">
+		<div class="row" style="padding: 50px 0px;margin:0px;align-self:center;border-bottom:1px solid rgb(168, 168, 168);justify-content:center">
+			<div class="col s12 m5" style="width:500px;padding-left:10px;display:flex;justify-content:center;flex-flow:column">
+				<img style="padding:0px;width:90px;height:95px" alt="" src="covid.png">
+				
+				<h3 class="rentSafe" style="margin-top:10px;height: fit-content;">Rent Safe <br>During <span style="color:#f1e44f;">COVID-19</span></br>
+			</div>
+			<div class="col s12 m5" style="font-family: proxima-nova,sans-serif;width:500px">
+				<h5 class="rentSafePara" style="text-align:left" >
+					The greatest lesson that COVID-19 can teach humanity is that we are all in this together. Life doesn’t get easier or more forgiving, we get stronger and more resilient
+				When the world is running down, you make the best of what's still around. The secret of crisis management is not good vs. bad, it's preventing the bad from getting worse.
+				</h5>
+			</div>
+			
+		
+		</div>
+		
+		<div style="text-align:center;background-color:white;padding:50px;padding-bottom:0px;margin-bottom:0px">
+			<h3 class="rentSafe" style="padding:0px;" >Perform All Tasks Online to</br> <span style="color:#f1e44f">Minimize Direct Contact</span></h3>
+			
+		</div>
+		</div>
+	
+	<!-- 3 CAROUSEL CARD -->
+	<div class="carousel" onclick="test();"  >
+		<div class="car-cont">
+		<div id="car1" class="carEl" href="#three!"></div>
+		<div id="car2" class="carEl" href="#two!"></div>
+		<div  id="car3" class="carEl" href="#one!"></div>
+		</div>
+	</div>
+	
+	<!-- EXTRA PARAGRAPH -->
+	<div class="row">
+			<p class="rentSafePara" style="text-align:center;display:flex;align-self:flex-start">See the current highest proposal and the number of people who applied for the property, so you can make an informed decision and negotiate the price. All this now can be done online with Rentberry.</p>
+	</div>
+	</br>
+	</br>
+	
+	<!-- CARDS HERE || FOR 2 CARDS - PRIVATE OR MASS -->
+	
+	<div class="row" style="width:80%;margin:auto">
+	<div class="col s12 m1"> </div>
+	
+	<!-- Card 1 here -->
+	
+	<div class="row1" style="width:1300px;margin:auto">
+		<div class="wrapper">
+			<div id="imgcont1" class="imgcont"></div>
+			<div class="textcont"><h4 id="personal" style="opacity: 1;"></h4>  <p class="para">We at Funda Session are here to help you grow , if you choose to help yourself . We don't teach you what to think , but rather how to think by  having a one to one mentorship platform ,where we help you develop a positive growth mindset in the domain you are looking forward to by helping you reach your goals much faster and making your path to success smoother .</p>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div  class="imgcont"></div>
+			<div class="textcont"><h4 id="coll" style="opacity: 1;"> </h4><p class="para">The world has come to a halt, but you don’t need to!
+				Come join us to make the most of this time and acquire new skills which not only add value to your career, but also help maneuvering lifestyle. Funda Session brings to you personalised interactive sessions with an aim of enhancing academic and interpersonal skills. Take a simplified tour of our course catalogue and you’ll know you’re at the right place!</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Card 2 -->
+	
+	<div class="col s12 m1"> </div>
+	</div>
+	</div>
+	
+	<div class="card-cont" id="card-cont">
+		<h2 style="text-decoration: underline;">Featured courses</h2>
+		<div>
+		<a href="#modal1" class="hcard modal-trigger"></a>
+		<a href="services.html#hovercont" class="hcard"></a>
+		<a href="services.html#hovercont" class="hcard"></a>
+		</div>
+	</div>
+	
+	
+	
+	<div class="screen" id="ourmission">
+		<div class="stitle"><h2 id="mission"></h2></div>
+		<div class="scont">Figuring out your life in 20s is just so mainstream. We are not Dr Strange but let us walk you through all the possible outcomes of a future you because winning is not about competing, it is about finding the best version of yourself. So, let us come together (well not too close because “social distancing”) and create a platform to get your act together. Why cry later when you literally have the entire “teenage” for it.</div>
+	</div>
+	<div class="screen" style="flex-flow: column wrap;" id="tTeam">
+		<h2 style="margin-bottom:80px;border:none;text-decoration:underline" id="tteam">OUR TEAM</h2>
+		<div class="teamcont" style="max-width: 1300px;display:flex;flex-flow:row wrap;justify-content:center">
+			<div class="tcard" onmouseover="tin(0)" onmouseout="tout(0)">
+				<div class="tscr1">
+					<div class="tface"></div>
+					<div class="tname">Title</div>
+				</div>
+				<div class="tscr2">
+					<div class="ttxt">Descriptive Content</div>
+				</div>
+	
+			</div>
+			<div class="tcard" onmouseover="tin(1)" onmouseout="tout(1)">
+				<div class="tscr1">
+					<div class="tface"></div>
+					<div class="tname">Title</div>
+				</div>
+				<div class="tscr2">
+					<div class="ttxt">Descriptive Content</div>
+				</div>
+	
+			</div>
+			<div class="tcard" onmouseover="tin(2)" onmouseout="tout(2)">
+				<div class="tscr1">
+					<div class="tface"></div>
+					<div class="tname">Title</div>
+				</div>
+				<div class="tscr2">
+					<div class="ttxt">Descriptive Content</div>
+				</div>
+	
+			</div>
+			<div class="tcard" onmouseover="tin(3)" onmouseout="tout(3)">
+				<div class="tscr1">
+					<div class="tface"></div>
+					<div class="tname">Title</div>
+				</div>
+				<div class="tscr2">
+					<div class="ttxt">Descriptive Content</div>
+				</div>
+	
+			</div>
+			<div class="tcard" onmouseover="tin(4)" onmouseout="tout(4)">
+				<div class="tscr1">
+					<div class="tface"></div>
+					<div class="tname">Title</div>
+				</div>
+				<div class="tscr2">
+					<div class="ttxt">Descriptive Content</div>
+				</div>
+	
+			</div>
+			<div class="tcard" onmouseover="tin(5)" onmouseout="tout(5)">
+				<div class="tscr1">
+					<div class="tface"></div>
+					<div class="tname">Title</div>
+				</div>
+				<div class="tscr2">
+					<div class="ttxt">Descriptive Content</div>
+				</div>
+	
+			</div>
+		</div>
+	</div>
+	<!-- <div class="screen" id="ourteam" style="background-color:rgba(211, 211, 211, 0.4);">
+		<div class="writingspace">
+			<div class="writeups" >
+				<div class="wheader" ><h2 id="teaam" style="text-decoration:underline"></h2></div>
+				<div class="wtxt" id="team2" style="opacity: 0;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+			</div>
+			<div class="writeups">
+				<div class="wheader"><h2>Title1</h2></div>
+				<div class="wtxt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non feugiat mauris. Nunc fermentum dui velit, vel blandit orci ornare in. Phasellus dignissim risus eu odio egestas, ut condimentum dui vestibulum. Etiam nisi tortor, fermentum gravida maximus et, pellentesque nec libero.</div>
+			</div>
+			<div class="writeups">
+				<div class="wheader"><h2>Title2</h2></div>
+				<div class="wtxt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non feugiat mauris. Nunc fermentum dui velit, vel blandit orci ornare in. Phasellus dignissim risus eu odio egestas, ut condimentum dui vestibulum. Etiam nisi tortor, fermentum gravida maximus et, pellentesque nec libero.</div>
+			</div>
+			<div class="writeups">
+				<div class="wheader"><h2>Title3</h2></div>
+				<div class="wtxt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non feugiat mauris. Nunc fermentum dui velit, vel blandit orci ornare in. Phasellus dignissim risus eu odio egestas, ut condimentum dui vestibulum. Etiam nisi tortor, fermentum gravida maximus et, pellentesque nec libero.</div>
+			</div>
+			<div class="writeups">
+				<div class="wheader"><h2>Title4</h2></div>
+				<div class="wtxt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non feugiat mauris. Nunc fermentum dui velit, vel blandit orci ornare in. Phasellus dignissim risus eu odio egestas, ut condimentum dui vestibulum. Etiam nisi tortor, fermentum gravida maximus et, pellentesque nec libero.</div>
+			</div>
+			<div class="writeups">
+				<div class="wheader"><h2>Title5</h2></div>
+				<div class="wtxt"> Lorem ipsum dolor sit amekjhsfbjshBFJHSBFHAJSDBFt, consectetur adipiscing elit. Aenean non feugiat mauris. Nunc fermentum dui velit, vel blandit orci ornare in. Phasellus dignissim risus eu odio egestas, ut condimentum dui vestibulum. Etiam nisi tortor, fermentum gravida maximus et, pellentesque nec libero.</div>
+			</div>
+			<div class="writeups">
+				<div class="wheader"><h2>Title6</h2></div>
+				<div class="wtxt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non feugiat mauris. Nunc fermentum dui velit, vel blandit orci ornare in. Phasellus dignissim risus eu odio egestas, ut condimentum dui vestibulum. Etiam nisi tortor, fermentum gravida maximus et, pellentesque nec libero.</div>
+			</div>
+			
+		</div>
+		<div class="facesCont">
+			<div class="face" style="opacity: 0;transform:scale(1.2)"  onclick="ourteam(0)" ></div>
+			<div class="face" style="opacity: 0;transform:scale(1.2)" onclick="ourteam(1)" ></div>
+			<div class="face" style="opacity: 0;transform:scale(1.2)" onclick="ourteam(2)" ></div>
+			<div class="face" style="opacity: 0;transform:scale(1.2)" onclick="ourteam(3)" ></div>
+			<div class="face" style="opacity: 0;transform:scale(1.2)" onclick="ourteam(4)" ></div>
+			<div class="face" style="opacity: 0;transform:scale(1.2)" onclick="ourteam(5)" ></div>
+		</div>
+	</div> -->
+	<div class="screen" id="careers">
+		<div class="stitle"><h2 id="career"></h2></div>
+		<div class="scont" id="caree">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis accumsan tempor. Integer commodo sed nisl at efficitur. Aenean vitae rhoncus diam. Mauris ligula augue, eleifend in elit ut, dignissim rutrum urna. Duis ac nisi mi. Curabitur nec mi id arcu pretium faucibus nec nec purus. Sed vehicula ultrices nulla eget venenatis. Mauris augue justo, sagittis ut justo nec, consequat sagittis velit. Duis maximus felis vel urna faucibus, sed fermentum magna porttitor. Vivamus elementum, sapien sed ullamcorper consequat, ipsum mauris ultricies sem, a elementum ligula leo vitae velit. Vestibulum ut mauris interdum, malesuada mi ac, sodales metus.
+
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<!-- Footer -->
+	<footer class="page-footer" style="background-color:#2e2d36">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul >
+                  <li style="padding:5px;text-decoration:underline"><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+                  <li style="padding:5px;text-decoration:underline"><a class="grey-text text-lighten-3" href="#!">Refund Policy</a></li>
+                  <li style="padding:5px;text-decoration:underline"><a class="grey-text text-lighten-3" href="#!">Funds/Cancellation Policy</a></li>
+                  <li style="padding:5px;text-decoration:underline"><a class="grey-text text-lighten-3" href="#!">Terms and Conditions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+            </div>
+          </div>
+        </footer>
+	
+
+     <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	
+	
+	 
+	<script >
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
+		 });
+		
+		$(".dropdown-trigger").dropdown();
+		
+		
+
+		
+
+		  $(".hovers").hover3d({
+			selector: ".hov",
+			sensitivity:"10",
+			perspective:"400"
+			
+		});
+		
+		
+	</script>
+	<script src="common.js"></script>
+   </body>
+ </html>

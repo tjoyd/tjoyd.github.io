@@ -1,0 +1,38 @@
+#nav11{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    height: 70px;
+    width: 100%;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000;
+    
+}
+#nav11 *{
+    display: flex;
+    color: white;
+}
+a{
+    color: black;
+}
+.menu{
+    flex-flow: row;
+}
+.links{
+    padding: 10px;
+}
+.dlinks{
+    padding: 10px;
+}
+.dlinks:nth-child(1){
+     padding: 0px ;
+}
+#logo{
+    background-image: url(logo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    width: 180px;
+}

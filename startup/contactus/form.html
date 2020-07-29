@@ -1,11 +1,19 @@
-<p> Version 1.04 </p>
+<head>
+  <style>
+    form > input {
+      display:block;
+    }
+  
+</head>
+<body>
+<p> Version 1.06 </p>
 <form name="submit-to-google-sheet">
-  <input name="name" type="text" placeholder="Email" required>
+  <input name="name" type="text" placeholder="Name" required>
   <input name="email" type="email" placeholder="Email" required>
-  <input name="phoneno" type="text" placeholder="Email" required>
-  <input name="location" type="text" placeholder="Email" required>
-  <input name="schoolCollege" type="text" placeholder="Email" required>
-  <input name="year" type="text" placeholder="Email" required>
+  <input name="phoneno" type="text" placeholder="Phone No." required>
+  <input name="location" type="text" placeholder="Location" required>
+  <input name="schoolCollege" type="text" placeholder="School/College Name" required>
+  <input name="year" type="text" placeholder="Class or Year of Study" required>
   <button type="submit">Send</button>
 </form>
 
@@ -20,3 +28,4 @@
       .catch(error => console.error('Error!', error.message))
   })
 </script>
+</body>
